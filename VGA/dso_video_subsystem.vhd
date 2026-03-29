@@ -113,12 +113,12 @@ process(clk_cpu, reset_n)
             -- Trigger scrittura: quando scrivi il byte alto (0x4055)
             if (ramwe = '1' and bram_ce = '1') then
                 case mem_ramadr is
-                    when x"4050" => reg_x(7 downto 0) <= unsigned(data_in);
-                    when x"4051" => reg_x(9 downto 8) <= unsigned(data_in(1 downto 0));
-                    when x"4052" => reg_y(7 downto 0) <= unsigned(data_in);
-                    when x"4053" => reg_y(9 downto 8) <= unsigned(data_in(1 downto 0));
-                    when x"4054" => reg_data_low <= data_in;
-                    when x"4055" => 
+                    when x"5050" => reg_x(7 downto 0) <= unsigned(data_in);
+                    when x"5051" => reg_x(9 downto 8) <= unsigned(data_in(1 downto 0));
+                    when x"5052" => reg_y(7 downto 0) <= unsigned(data_in);
+                    when x"5053" => reg_y(9 downto 8) <= unsigned(data_in(1 downto 0));
+                    when x"5054" => reg_data_low <= data_in;
+                    when x"5055" => 
                         reg_data_high <= data_in;
                         direct_req <= '1'; 
                     when others => null;

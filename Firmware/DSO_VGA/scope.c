@@ -22,10 +22,16 @@
 
 /* --- MAPPATURA HARDWARE & MEMORIA CONDIVISA --- */
 // Puntatore alla struct delle misure (mappata dopo i buffer campioni)
-ScopeMeasures *misure = (ScopeMeasures *)0x3000;
+//ScopeMeasures *misure = (ScopeMeasures *)0x3000;
+ScopeMeasures misure_data;
+ScopeMeasures *misure = &misure_data;
 
 // Puntatori ai buffer per la cancellazione della traccia precedente (Double Buffering logico)
-int16_t* buffers_vecchi[2] = { ADDR_OLD_A, ADDR_OLD_B };
+//int16_t* buffers_vecchi[2] = { ADDR_OLD_A, ADDR_OLD_B };
+
+int16_t buffer_storage_A[500];
+int16_t buffer_storage_B[500];
+int16_t* buffers_vecchi[2] = { buffer_storage_A, buffer_storage_B };
 
 /* --- STATO DEI CANALI --- */
 Channel ch1, ch2;
@@ -173,7 +179,7 @@ void acquire_and_draw(){
 
     if(!is_xy_mode){
         tft_drawGrid(WHITE);
-        draw_dual_trace_from_bram(&ch1, &ch2, old_buffer_a, old_buffer_b, 400, is_vectors);
+        draw_dual_trace_from_bram(&ch1, &ch2, old_buffer_a, old_buffer_b, 500, is_vectors);
         draw_trigger_line(trigger_level_12bit, YELLOW, false);
         draw_ground_marker(&ch1);
         draw_ground_marker(&ch2);
@@ -181,7 +187,7 @@ void acquire_and_draw(){
         aggiorna_grafica_cursori();
     }else{
         tft_drawGrid_XY(GREY);
-        draw_xy_trace(&ch1, &ch2, old_buffer_a, old_buffer_b, 400);
+        draw_xy_trace(&ch1, &ch2, old_buffer_a, old_buffer_b, 500);
     }
     
     
@@ -422,7 +428,7 @@ void handle_channel_button(uint8_t channel_num) {
         current->focused = 0;
         
         // Pulizia tracce "fantasmi"
-        for (uint16_t i = 0; i < 400; i++) {
+        for (uint16_t i = 0; i < 500; i++) {
             vga_pixel_fast(i + MARGIN_X, buffers_vecchi[idx][i], BLACK);
         }
         

@@ -39,7 +39,9 @@ LST  = firmware.lst
 CFLAGS  = -mmcu=$(ARCH) -DF_CPU=$(F_CPU) -funsigned-char -funsigned-bitfields \
           -fpack-struct -fshort-enums -Wall -Wstrict-prototypes \
           -Wno-unused-function -Os
-LDFLAGS = -mmcu=$(ARCH)
+#LDFLAGS = -mmcu=$(ARCH)
+LDFLAGS = -mmcu=$(ARCH) -T dso_linker_script.x -Wl,-Map,firmware.map \
+          -Wl,--defsym=__stack=0x8040ff -lm
 
 PMEM_DEPTH=14
 SRAM_DEPTH=12

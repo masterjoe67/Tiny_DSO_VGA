@@ -79,7 +79,7 @@ void vga_setTextColor(uint16_t c, uint16_t b)
 
 void vga_pixel_fast(uint16_t x, uint16_t y, uint16_t color) {
     // Aspetta che la SDRAM sia libera prima di iniziare (se c'è un'operazione pendente)
-    uint16_t timeout = 1000;
+    uint16_t timeout = 10000;
     while((VGA_REG_STAT & 0x01) && --timeout); 
 
     VIDEO_REG_X_L = (uint8_t)(x & 0xFF);
@@ -88,6 +88,7 @@ void vga_pixel_fast(uint16_t x, uint16_t y, uint16_t color) {
     VIDEO_REG_Y_H = (uint8_t)((y >> 8) & 0x03);
     
     VIDEO_REG_DATA_L = (uint8_t)(color & 0xFF);
+
     VIDEO_REG_DATA_H = (uint8_t)(color >> 8); 
     
 

@@ -20,49 +20,49 @@
 #define REG_TRIGGER_LEVEL   _SFR_IO8(0x13)
 #define REG_TRIGGER_MODE    _SFR_IO8(0x15)
 
-#define BRAM_START_ADDR 0x4000
-#define BRAM_DATA_PTR   ((volatile uint8_t *)0x4000)
+#define BRAM_START_ADDR 0x5000
+#define BRAM_DATA_PTR   ((volatile uint8_t *)0x5000)
 
 // Definiamo l'inizio della RAM "extra" (dopo i primi 4KB dell'ATmega128)
 // L'indirizzo 0x1100 è l'inizio della zona oltre i 4KB standard
-#define RAM_EXTRA_START 0x1100
-#define ADDR_OLD_A (int16_t*)(0x1740)
-#define ADDR_OLD_B (int16_t*)(0x1A60)
+//#define RAM_EXTRA_START 0x1100
+//#define ADDR_OLD_A (int16_t*)(RAM_EXTRA_START + 4000)
+//#define ADDR_OLD_B (int16_t*)(RAM_EXTRA_START + 5000)
 
 // Indirizzi base del Co-Processore
 // --- CONFIGURAZIONE CANALE 1 ---
-#define REG_CH1_SCALE_L   0x4010  // Scrittura: Scala bit 7-0
-#define REG_CH1_SCALE_H   0x4011  // Scrittura: Scala bit 15-8
-#define REG_CH1_OFFSET_L  0x4012  // Scrittura: Offset bit 7-0
-#define REG_CH1_OFFSET_H  0x4013  // Scrittura: Offset bit 15-8
+#define REG_CH1_SCALE_L   0x5010  // Scrittura: Scala bit 7-0
+#define REG_CH1_SCALE_H   0x5011  // Scrittura: Scala bit 15-8
+#define REG_CH1_OFFSET_L  0x5012  // Scrittura: Offset bit 7-0
+#define REG_CH1_OFFSET_H  0x5013  // Scrittura: Offset bit 15-8
 
 // --- CONFIGURAZIONE CANALE 2 ---
-#define REG_CH2_SCALE_L   0x4014  // Scrittura: Scala bit 7-0
-#define REG_CH2_SCALE_H   0x4015  // Scrittura: Scala bit 15-8
-#define REG_CH2_OFFSET_L  0x4016  // Scrittura: Offset bit 7-0
-#define REG_CH2_OFFSET_H  0x4017  // Scrittura: Offset bit 15-8
+#define REG_CH2_SCALE_L   0x5014  // Scrittura: Scala bit 7-0
+#define REG_CH2_SCALE_H   0x5015  // Scrittura: Scala bit 15-8
+#define REG_CH2_OFFSET_L  0x5016  // Scrittura: Offset bit 7-0
+#define REG_CH2_OFFSET_H  0x5017  // Scrittura: Offset bit 15-8
 
 // --- INPUT ADC E TRIGGER CALCOLO ---
-#define REG_CH1_ADC_L     0x4018  // Scrittura: Byte basso ADC (Parcheggio)
-#define REG_CH1_ADC_H     0x4019  // Scrittura: Byte alto ADC (Trigger Calcolo CH1)
-#define REG_CH2_ADC_L     0x401A  // Scrittura: Byte basso ADC (Parcheggio)
-#define REG_CH2_ADC_H     0x401B  // Scrittura: Byte alto ADC (Trigger Calcolo CH2)
+#define REG_CH1_ADC_L     0x5018  // Scrittura: Byte basso ADC (Parcheggio)
+#define REG_CH1_ADC_H     0x5019  // Scrittura: Byte alto ADC (Trigger Calcolo CH1)
+#define REG_CH2_ADC_L     0x501A  // Scrittura: Byte basso ADC (Parcheggio)
+#define REG_CH2_ADC_H     0x501B  // Scrittura: Byte alto ADC (Trigger Calcolo CH2)
 
 // --- RISULTATO CALCOLO (LETTURA) ---
-#define REG_Y_RESULT_L    0x401C  // Lettura: y_result bit 7-0
-#define REG_Y_RESULT_H    0x401D  // Lettura: y_result bit 15-8
+#define REG_Y_RESULT_L    0x501C  // Lettura: y_result bit 7-0
+#define REG_Y_RESULT_H    0x501D  // Lettura: y_result bit 15-8
 
-#define REG_TRIG_HYST    0x401E  // Scrittura: Trigger Hysteresis (0-255, in LSB)
+#define REG_TRIG_HYST    0x501E  // Scrittura: Trigger Hysteresis (0-255, in LSB)
 
-#define REG_DDS_ADDR 0x401F  // Frequenza di uscita del DDS (4 byte, 32 bit unsigned int)
+#define REG_DDS_ADDR 0x501F  // Frequenza di uscita del DDS (4 byte, 32 bit unsigned int)
 
 #define XRAM_WRITE(addr, val) (*(volatile uint8_t *)(addr) = (val))
 #define XRAM_READ(addr) (*(volatile uint8_t *)(addr))
 
 #define TRIG_CTRL_BIT  7         // il bit che sblocca wr_ptr
 
-#define PRE_TRIGGER       200
-#define POST_TRIGGER      200
+#define PRE_TRIGGER       250
+#define POST_TRIGGER      250
 #define BUFFER_TOTAL      (PRE_TRIGGER + POST_TRIGGER)
 #define READY_BIT         1
 #define BUFFER_SIZE       4096
@@ -70,13 +70,17 @@
 #define PAN_LIMIT         200   
 #define PAN_STEP          4
 
-#define TRACE_W 400
-#define TRACE_H 240
-#define MARGIN_X 5
-#define MARGIN_Y 25
-#define SIDEBAR_X (MARGIN_X + TRACE_W + 5)
-#define CENTER_TRACE_X (MARGIN_X + (TRACE_W / 2))
-#define OFFSET_XY_AREA 85
+
+#define MAX_X   639
+#define TRACE_W 500
+#define TRACE_H 380
+#define MARGIN_X 20
+#define MARGIN_Y 40
+
+#define FOOTER_Y        (MARGIN_Y + TRACE_H + 10)
+#define SIDEBAR_X       (MARGIN_X + TRACE_W + 10)
+#define CENTER_TRACE_X  (MARGIN_X + (TRACE_W / 2))
+#define OFFSET_XY_AREA  85
 
 #define COUPL_DC  0
 #define COUPL_AC  1
@@ -121,8 +125,7 @@
 #define MAX_TIMEBASE_IDX 18
 #define MAX_VDIV_IDX 9
 
-#define PRE_TRIGGER       200
-#define POST_TRIGGER      200
+
 
 #define Y_T  0
 #define X_Y  1
@@ -285,13 +288,11 @@ extern uint8_t oldMenu;
 extern EncoderMode current_enc_mode;
 extern uint8_t trigger_hysteresis;
 extern uint8_t trigger_source;
-extern uint16_t *ch1_buffer;
-extern uint16_t *ch2_buffer;
+extern uint16_t ch1_buffer[];
+extern uint16_t ch2_buffer[];
 extern const float v_div_values[];
-extern uint16_t *ch1_buffer;
-extern uint16_t *ch2_buffer;
-extern int16_t *old_buffer_a;
-extern int16_t *old_buffer_b;
+extern int16_t old_buffer_a[];
+extern int16_t old_buffer_b[];
 extern uint8_t is_xy_mode;
 extern uint8_t is_vectors;
 

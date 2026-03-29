@@ -269,40 +269,40 @@ begin
         if (ramwe = '1') then
             case mem_ramadr is
                 -- CONFIGURAZIONE CH1 (0x4010 - 0x4013)
-                when x"4010" => scale_ch1(7 downto 0)  <= signed(data_in);
-                when x"4011" => scale_ch1(15 downto 8) <= signed(data_in);
-                when x"4012" => offset_ch1(7 downto 0) <= signed(data_in);
-                when x"4013" => offset_ch1(15 downto 8)<= signed(data_in);
+                when x"5010" => scale_ch1(7 downto 0)  <= signed(data_in);
+                when x"5011" => scale_ch1(15 downto 8) <= signed(data_in);
+                when x"5012" => offset_ch1(7 downto 0) <= signed(data_in);
+                when x"5013" => offset_ch1(15 downto 8)<= signed(data_in);
 
                 -- CONFIGURAZIONE CH2 (0x4014 - 0x4017)
-                when x"4014" => scale_ch2(7 downto 0)  <= signed(data_in);
-                when x"4015" => scale_ch2(15 downto 8) <= signed(data_in);
-                when x"4016" => offset_ch2(7 downto 0) <= signed(data_in);
-                when x"4017" => offset_ch2(15 downto 8)<= signed(data_in);
+                when x"5014" => scale_ch2(7 downto 0)  <= signed(data_in);
+                when x"5015" => scale_ch2(15 downto 8) <= signed(data_in);
+                when x"5016" => offset_ch2(7 downto 0) <= signed(data_in);
+                when x"5017" => offset_ch2(15 downto 8)<= signed(data_in);
 
                 -- ACQUISIZIONE E CALCOLO (0x4018 - 0x401B)
-                when x"4018" => 
+                when x"5018" => 
                     adc_temp_l <= data_in; -- LSB CH1
                 
-                when x"4019" => -- MSB CH1 + TRIGGER CALCOLO CH1
+                when x"5019" => -- MSB CH1 + TRIGGER CALCOLO CH1
                     adc_full_12bit <= signed(std_logic_vector'(x"0" & data_in(3 downto 0) & adc_temp_l));
                     v_adc  := signed(std_logic_vector'(x"0" & data_in(3 downto 0) & adc_temp_l)) - 2048;
                     v_mult := v_adc * scale_ch1;
                     y_result <= offset_ch1 - resize(v_mult(31 downto 16), 16);
 
-                when x"401A" => 
+                when x"501A" => 
                     adc_temp_l <= data_in; -- LSB CH2
                 
-                when x"401B" => -- MSB CH2 + TRIGGER CALCOLO CH2
+                when x"501B" => -- MSB CH2 + TRIGGER CALCOLO CH2
                     v_adc  := signed(std_logic_vector'(x"0" & data_in(3 downto 0) & adc_temp_l)) - 2048;
                     v_mult := v_adc * scale_ch2;
                     y_result <= offset_ch2 - resize(v_mult(31 downto 16), 16);
-					 when x"401E" => 
+					 when x"501E" => 
 						  reg_trig_hyst <= resize(unsigned(data_in), 12); -- Carica l'isteresi da C
-					 when x"4020" => reg_dds_inc(7 downto 0)   <= unsigned(data_in);
-					when x"4021" => reg_dds_inc(15 downto 8)  <= unsigned(data_in);
-					when x"4022" => reg_dds_inc(23 downto 16) <= unsigned(data_in);
-					when x"4023" => reg_dds_inc(31 downto 24) <= unsigned(data_in);
+					 when x"5020" => reg_dds_inc(7 downto 0)   <= unsigned(data_in);
+					when x"5021" => reg_dds_inc(15 downto 8)  <= unsigned(data_in);
+					when x"5022" => reg_dds_inc(23 downto 16) <= unsigned(data_in);
+					when x"5023" => reg_dds_inc(31 downto 24) <= unsigned(data_in);
                 when others => null;
             end case;
         end if;
@@ -614,14 +614,14 @@ begin
     if bram_ce = '1' then
         case mem_ramadr is
             -- Lettura BRAM (Originale)
-            when x"4000" => bram_data_to_avr <= std_logic_vector(ram_a_out(7 downto 0));
-            when x"4001" => bram_data_to_avr <= "0000" & std_logic_vector(ram_a_out(11 downto 8));
-            when x"4002" => bram_data_to_avr <= std_logic_vector(ram_b_out(7 downto 0));
-            when x"4003" => bram_data_to_avr <= "0000" & std_logic_vector(ram_b_out(11 downto 8));
+            when x"5000" => bram_data_to_avr <= std_logic_vector(ram_a_out(7 downto 0));
+            when x"5001" => bram_data_to_avr <= "0000" & std_logic_vector(ram_a_out(11 downto 8));
+            when x"5002" => bram_data_to_avr <= std_logic_vector(ram_b_out(7 downto 0));
+            when x"5003" => bram_data_to_avr <= "0000" & std_logic_vector(ram_b_out(11 downto 8));
             
             -- Lettura Y_RESULT (16 bit divisi in due letture)
-            when x"401C" => bram_data_to_avr <= std_logic_vector(y_result(7 downto 0));
-            when x"401D" => bram_data_to_avr <= std_logic_vector(y_result(15 downto 8));
+            when x"501C" => bram_data_to_avr <= std_logic_vector(y_result(7 downto 0));
+            when x"501D" => bram_data_to_avr <= std_logic_vector(y_result(15 downto 8));
             
             when others => null;
         end case;
@@ -683,7 +683,7 @@ begin
              -- Incremento alla FINE della lettura (Fronte di salita di ramre)
              -- Solo se siamo sull'ultimo byte del pacchetto (CH2_High -> "11")
              if bram_ce = '1' and mem_ramadr(3 downto 0) = "0011" then
-                  if reg_index_int = 399 then 
+                  if reg_index_int = 499 then 
                       reg_index_int <= (others => '0');
                   else
                       reg_index_int <= reg_index_int + 1;

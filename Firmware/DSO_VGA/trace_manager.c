@@ -8,13 +8,15 @@
 static int16_t last_trig_y = -100; // Inizializzato fuori schermo
 static Point_t old_trig_a, old_trig_b, old_trig_c;
 
-// Creiamo dei puntatori che puntano a quella zona
-uint16_t *ch1_buffer = (uint16_t *)(RAM_EXTRA_START);
-uint16_t *ch2_buffer = (uint16_t *)(RAM_EXTRA_START + 800); // 800 byte dopo (400 samples * 2)
+#define MAX_SAMPLES 500
 
-// Puntatori ai buffer "storici" (vecchi dati per cancellazione)
-int16_t *old_buffer_a = (int16_t *)(RAM_EXTRA_START + 1600);
-int16_t *old_buffer_b = (int16_t *)(RAM_EXTRA_START + 2400);
+// Array reali che il Linker può "vedere"
+uint16_t ch1_buffer[MAX_SAMPLES];      // 1000 byte
+uint16_t ch2_buffer[MAX_SAMPLES];      // 1000 byte
+
+// Buffer storici per cancellare la vecchia traccia
+int16_t old_buffer_a[MAX_SAMPLES];     // 1000 byte
+int16_t old_buffer_b[MAX_SAMPLES];     // 1000 byte
 
 Point_t old_a = { 0, 0 };
 Point_t old_b = { 0, 0 };
@@ -117,13 +119,14 @@ void draw_dual_trace_from_bram(Channel *ch_a, Channel *ch_b, int16_t *old_buf_a,
     for (uint16_t i = 0; i < length; i++) {
         uint16_t x = i + MARGIN_X;
         uint16_t ram_idx = (uint16_t)(ram_idx_fp >> 8);
-        if (ram_idx >= 400) ram_idx = 399;
+        if (ram_idx >= 500) ram_idx = 499;
 
         // --- GESTIONE CANALE A ---
         // 1. CANCELLAZIONE (Sempre, se il vecchio punto era valido)
         if (old_buf_a[i] > Y_MIN && old_buf_a[i] < Y_MAX) {
             if (vectors && i > 0 && y_prev_old_a > Y_MIN) 
                 vga_drawLine_Clipped(x-1, y_prev_old_a, x, old_buf_a[i], BLACK, Y_MIN, Y_MAX);
+                //__asm__ __volatile__ ("nop");
             else 
                 vga_pixel_fast(x, old_buf_a[i], BLACK);
         }
@@ -135,6 +138,7 @@ void draw_dual_trace_from_bram(Channel *ch_a, Channel *ch_b, int16_t *old_buf_a,
             if (y_now_a > Y_MIN && y_now_a < Y_MAX) {
                 if (vectors && i > 0 && y_prev_new_a > Y_MIN) 
                     vga_drawLine_Clipped(x-1, y_prev_new_a, x, y_now_a, ch_a->color, Y_MIN, Y_MAX);
+                    //__asm__ __volatile__ ("nop");
                 else 
                     vga_pixel_fast(x, y_now_a, ch_a->color);
             }
@@ -150,6 +154,7 @@ void draw_dual_trace_from_bram(Channel *ch_a, Channel *ch_b, int16_t *old_buf_a,
         if (old_buf_b[i] > Y_MIN && old_buf_b[i] < Y_MAX) {
             if (vectors && i > 0 && y_prev_old_b > Y_MIN) 
                 vga_drawLine_Clipped(x-1, y_prev_old_b, x, old_buf_b[i], BLACK, Y_MIN, Y_MAX);
+                //__asm__ __volatile__ ("nop");
             else 
                 vga_pixel_fast(x, old_buf_b[i], BLACK);
         }
@@ -161,6 +166,7 @@ void draw_dual_trace_from_bram(Channel *ch_a, Channel *ch_b, int16_t *old_buf_a,
             if (y_now_b > Y_MIN && y_now_b < Y_MAX) {
                 if (vectors && i > 0 && y_prev_new_b > Y_MIN) 
                     vga_drawLine_Clipped(x-1, y_prev_new_b, x, y_now_b, ch_b->color, Y_MIN, Y_MAX);
+                    //__asm__ __volatile__ ("nop");
                 else 
                     vga_pixel_fast(x, y_now_b, ch_b->color);
             }
@@ -320,20 +326,23 @@ void draw_trigger_line(uint16_t level12, uint16_t color, bool erase) {
     }
 }
 
+
+
 void tft_drawGrid(uint16_t color) {
+
     int16_t xStart = MARGIN_X;
     int16_t yStart = MARGIN_Y;
     int16_t xEnd   = MARGIN_X + TRACE_W;
     int16_t yEnd   = MARGIN_Y + TRACE_H;
 
-    uint8_t gridSpacing = 40;  // Orizzontale (Tempo)
-    uint8_t gridVSpacing = 30; // Verticale (Tensione)
-    uint8_t dotSpacing  = 4;
+    uint8_t gridSpacing = 50;  // Orizzontale (Tempo)
+    uint8_t gridVSpacing = 38; // Verticale (Tensione)
+    uint8_t dotSpacing  = 6;
 
     // Calcoliamo le coordinate centrali
     // Nota: Assicurati che TRACE_W/2 e TRACE_H/2 siano multipli di gridSpacing
-    int16_t xCenter = xStart + (TRACE_W / 2);
-    int16_t yCenter = yStart + (TRACE_H / 2);
+    int16_t xCenter = MARGIN_X + (TRACE_W >> 1);
+    int16_t yCenter = MARGIN_Y + (TRACE_H >> 1);
 
     // 1. Linee Orizzontali
     for (int16_t y = yStart; y <= yEnd; y += gridVSpacing) {
@@ -342,7 +351,9 @@ void tft_drawGrid(uint16_t color) {
         uint8_t step = (y == yCenter) ? 2 : dotSpacing;
         
         for (int16_t x = xStart; x <= xEnd; x += step) {
-            vga_pixel_fast(x, y, color);
+                
+                    vga_pixel_fast(x, y, color);
+                
         }
     }
 
@@ -353,7 +364,49 @@ void tft_drawGrid(uint16_t color) {
         uint8_t step = (x == xCenter) ? 2 : dotSpacing;
 
         for (int16_t y = yStart; y <= yEnd; y += step) {
-            vga_pixel_fast(x, y, color);
+                
+                    vga_pixel_fast(x, y, color);
+                
+        }
+    }
+}
+
+void tft_drawGrid2(uint16_t color) {
+    int16_t xStart = MARGIN_X;
+    int16_t yStart = MARGIN_Y;
+    int16_t xEnd   = MARGIN_X + TRACE_W;
+    int16_t yEnd   = MARGIN_Y + TRACE_H;
+
+    uint8_t gridSpacing = 50;  // Orizzontale (Tempo)
+    uint8_t gridVSpacing = 38; // Verticale (Tensione)
+    uint8_t dotSpacing  = 4;
+
+    // Calcoliamo le coordinate centrali
+    // Nota: Assicurati che TRACE_W/2 e TRACE_H/2 siano multipli di gridSpacing
+    int16_t xCenter = xStart + (TRACE_W / 2);
+    int16_t yCenter = yStart + (TRACE_H / 2);
+
+    // 1. Linee Orizzontali
+    for (int16_t y = yStart; y <= yEnd; y += gridVSpacing) {
+        uint8_t step = (y == yCenter) ? 2 : dotSpacing;
+        
+        for (int16_t x = xStart; x <= xEnd; x += step) {
+            // Un controllo di sicurezza extra non guasta mai
+            if (x < 520 && y < 480) vga_pixel_fast(x, y, color);
+        }
+
+    }
+
+    // 2. Linee Verticali
+    for (int16_t x = xStart; x <= xEnd; x += gridSpacing) {
+        uint8_t step = (x == xCenter) ? 2 : dotSpacing;
+
+        for (int16_t y = yStart; y <= yEnd; y += step) {
+            // Evitiamo di ridisegnare i punti già fatti dalle linee orizzontali
+            // se y è un multiplo di gridVSpacing (opzionale ma consigliato)
+            if ((y - yStart) % gridVSpacing != 0 || x == xCenter || y == yCenter) {
+                if (x < 520 && y < 480) vga_pixel_fast(x, y, color);
+            }
         }
     }
 }

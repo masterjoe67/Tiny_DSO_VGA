@@ -111,10 +111,10 @@ void aggiorna_t_div(uint8_t indice) {
     uint32_t dds_val = pgm_read_dword(&dds_table[indice]);
 
     // Scrittura diretta sui 4 indirizzi mappati
-    XRAM_WRITE(0x4020, (uint8_t)(dds_val & 0xFF));         // LSB
-    XRAM_WRITE(0x4021, (uint8_t)((dds_val >> 8) & 0xFF));
-    XRAM_WRITE(0x4022, (uint8_t)((dds_val >> 16) & 0xFF));
-    XRAM_WRITE(0x4023, (uint8_t)((dds_val >> 24) & 0xFF)); // MSB
+    XRAM_WRITE(0x5020, (uint8_t)(dds_val & 0xFF));         // LSB
+    XRAM_WRITE(0x5021, (uint8_t)((dds_val >> 8) & 0xFF));
+    XRAM_WRITE(0x5022, (uint8_t)((dds_val >> 16) & 0xFF));
+    XRAM_WRITE(0x5023, (uint8_t)((dds_val >> 24) & 0xFF)); // MSB
 }
 
 // Da chiamare SOLO quando l'utente cambia V/div o Offset
@@ -146,10 +146,10 @@ void aggiorna_parametri_hw(Channel *ch) {
 
 void aggiorna_registri_dds(uint32_t reg_val) {
     // Scrittura diretta byte per byte agli indirizzi mappati nell'FPGA
-    XRAM_WRITE(0x4020, (uint8_t)(reg_val & 0xFF));         // LSB
-    XRAM_WRITE(0x4021, (uint8_t)((reg_val >> 8) & 0xFF));
-    XRAM_WRITE(0x4022, (uint8_t)((reg_val >> 16) & 0xFF));
-    XRAM_WRITE(0x4023, (uint8_t)((reg_val >> 24) & 0xFF)); // MSB
+    XRAM_WRITE(0x5020, (uint8_t)(reg_val & 0xFF));         // LSB
+    XRAM_WRITE(0x5021, (uint8_t)((reg_val >> 8) & 0xFF));
+    XRAM_WRITE(0x5022, (uint8_t)((reg_val >> 16) & 0xFF));
+    XRAM_WRITE(0x5023, (uint8_t)((reg_val >> 24) & 0xFF)); // MSB
 }
 
 void osc_write_view_offset(int16_t offset)
@@ -204,7 +204,7 @@ void osc_read_triggered()
         // Offset 0,1 -> Canale A | Offset 2,3 -> Canale B
         // --- RESET INDICE HARDWARE ---
     INDEX_RESET = 0x01; 
-    for(uint16_t i = 0; i < 400; i++) {
+    for(uint16_t i = 0; i < 500; i++) {
         uint8_t a_l = BRAM_DATA_PTR[0];
         uint8_t a_h = BRAM_DATA_PTR[1];
         uint8_t b_l = BRAM_DATA_PTR[2];

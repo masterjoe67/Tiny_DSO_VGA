@@ -1,0 +1,1835 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+                              trace_manager.o (__udivmodhi4)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+                              Peripheral/uart.o (__divmodhi4)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+                              Peripheral/uart.o (__udivmodsi4)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+                              Peripheral/video.o (__divmodsi4)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o) (__negsi2)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o (exit)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+                              encoder_manager.o (__tablejump2__)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+                              Peripheral/input.o (__do_clear_bss)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+                              display_manager.o (__muluhisi3)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o) (__umulhisi3)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                              Peripheral/uart.o (__subsf3)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o) (__addsf3x)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                              cursor_manager.o (__eqsf2)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                              Peripheral/video.o (__divsf3)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o) (__divsf3x)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+                              Peripheral/video.o (__fixsfsi)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                              Peripheral/uart.o (__fixunssfsi)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                              Peripheral/uart.o (__floatunsisf)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o) (__fp_cmp)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_inf)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_nan)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_pscA)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_pscB)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o) (__fp_round)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_split3)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_zero)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+                              autoset_manager.o (__gesf2)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                              Peripheral/uart.o (__mulsf3)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o) (__mulsf3x)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+                              cursor_manager.o (dtostrf)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o) (ftoa_prf)
+C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o) (__ftoa_engine)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800100         0x00001000         rw!x
+eeprom           0x00810000         0x00001000         rw!x
+fuse             0x00820000         0x00000003         rw!x
+lock             0x00830000         0x00000400         rw!x
+signature        0x00840000         0x00000400         rw!x
+user_signatures  0x00850000         0x00000400         rw!x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+LOAD main.o
+LOAD Peripheral/uart.o
+LOAD Peripheral/leds.o
+LOAD Peripheral/input.o
+LOAD Peripheral/video.o
+LOAD display_manager.o
+LOAD fpga_manager.o
+LOAD autoset_manager.o
+LOAD encoder_manager.o
+LOAD trace_manager.o
+LOAD trigger_manager.o
+LOAD cursor_manager.o
+LOAD scope.o
+START GROUP
+LOAD C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a
+LOAD C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a
+LOAD C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a
+LOAD C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libatmega128.a
+END GROUP
+                [0x00000000]                      __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00020000]                      __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00800100]                      __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800100
+                [0x00001000]                      __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xff00
+                [0x00001000]                      __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                      __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                        __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                        __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                        __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x61ae
+ *(.vectors)
+ .vectors       0x00000000       0x8c C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000008c                        . = ALIGN (0x2)
+                0x0000008c                        __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000008c                        __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+ .progmem.data  0x0000008c      0x760 Peripheral/video.o
+                0x0000008c                chrtbl_f16
+                0x0000014c                chr_f16_7F
+                0x0000015c                chr_f16_7E
+                0x0000016c                chr_f16_7D
+                0x0000017c                chr_f16_7C
+                0x0000018c                chr_f16_7B
+                0x0000019c                chr_f16_7A
+                0x000001ac                chr_f16_79
+                0x000001bc                chr_f16_78
+                0x000001cc                chr_f16_77
+                0x000001dc                chr_f16_76
+                0x000001ec                chr_f16_75
+                0x000001fc                chr_f16_74
+                0x0000020c                chr_f16_73
+                0x0000021c                chr_f16_72
+                0x0000022c                chr_f16_71
+                0x0000023c                chr_f16_70
+                0x0000024c                chr_f16_6F
+                0x0000025c                chr_f16_6E
+                0x0000026c                chr_f16_6D
+                0x0000027c                chr_f16_6C
+                0x0000028c                chr_f16_6B
+                0x0000029c                chr_f16_6A
+                0x000002ac                chr_f16_69
+                0x000002bc                chr_f16_68
+                0x000002cc                chr_f16_67
+                0x000002dc                chr_f16_66
+                0x000002ec                chr_f16_65
+                0x000002fc                chr_f16_64
+                0x0000030c                chr_f16_63
+                0x0000031c                chr_f16_62
+                0x0000032c                chr_f16_61
+                0x0000033c                chr_f16_60
+                0x0000034c                chr_f16_5F
+                0x0000036c                chr_f16_5E
+                0x0000038c                chr_f16_5D
+                0x0000039c                chr_f16_5C
+                0x000003ac                chr_f16_5B
+                0x000003bc                chr_f16_5A
+                0x000003cc                chr_f16_59
+                0x000003dc                chr_f16_58
+                0x000003ec                chr_f16_57
+                0x0000040c                chr_f16_56
+                0x0000041c                chr_f16_55
+                0x0000042c                chr_f16_54
+                0x0000043c                chr_f16_53
+                0x0000044c                chr_f16_52
+                0x0000045c                chr_f16_51
+                0x0000046c                chr_f16_50
+                0x0000047c                chr_f16_4F
+                0x0000048c                chr_f16_4E
+                0x0000049c                chr_f16_4D
+                0x000004bc                chr_f16_4C
+                0x000004cc                chr_f16_4B
+                0x000004dc                chr_f16_4A
+                0x000004ec                chr_f16_49
+                0x000004fc                chr_f16_48
+                0x0000050c                chr_f16_47
+                0x0000051c                chr_f16_46
+                0x0000052c                chr_f16_45
+                0x0000053c                chr_f16_44
+                0x0000054c                chr_f16_43
+                0x0000055c                chr_f16_42
+                0x0000056c                chr_f16_41
+                0x0000057c                chr_f16_40
+                0x0000058c                chr_f16_3F
+                0x0000059c                chr_f16_3E
+                0x000005ac                chr_f16_3D
+                0x000005bc                chr_f16_3C
+                0x000005cc                chr_f16_3B
+                0x000005dc                chr_f16_3A
+                0x000005ec                chr_f16_39
+                0x000005fc                chr_f16_38
+                0x0000060c                chr_f16_37
+                0x0000061c                chr_f16_36
+                0x0000062c                chr_f16_35
+                0x0000063c                chr_f16_34
+                0x0000064c                chr_f16_33
+                0x0000065c                chr_f16_32
+                0x0000066c                chr_f16_31
+                0x0000067c                chr_f16_30
+                0x0000068c                chr_f16_2F
+                0x0000069c                chr_f16_2E
+                0x000006ac                chr_f16_2D
+                0x000006bc                chr_f16_2C
+                0x000006cc                chr_f16_2B
+                0x000006dc                chr_f16_2A
+                0x000006ec                chr_f16_29
+                0x000006fc                chr_f16_28
+                0x0000070c                chr_f16_27
+                0x0000071c                chr_f16_26
+                0x0000072c                chr_f16_25
+                0x0000073c                chr_f16_24
+                0x0000074c                chr_f16_23
+                0x0000075c                chr_f16_22
+                0x0000076c                chr_f16_21
+                0x0000077c                chr_f16_20
+                0x0000078c                widtbl_f16
+ .progmem.data  0x000007ec       0x54 scope.o
+                0x000007ec                dds_table
+                0x00000840                        . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000840                        __ctors_start = .
+ *(.ctors)
+                0x00000840                        __ctors_end = .
+                0x00000840                        __dtors_start = .
+ *(.dtors)
+                0x00000840                        __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x00000840        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+                0x00000840                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000840        0xc C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000084c       0x1a C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+                0x0000084c                __do_copy_data
+ .init4         0x00000866       0x10 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+                0x00000866                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000876        0x8 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+ *(.init9)
+ *(.text)
+ .text          0x0000087e        0x4 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+                0x0000087e                __vector_22
+                0x0000087e                __vector_28
+                0x0000087e                __vector_1
+                0x0000087e                __vector_32
+                0x0000087e                __vector_34
+                0x0000087e                __vector_24
+                0x0000087e                __vector_12
+                0x0000087e                __bad_interrupt
+                0x0000087e                __vector_6
+                0x0000087e                __vector_31
+                0x0000087e                __vector_3
+                0x0000087e                __vector_23
+                0x0000087e                __vector_30
+                0x0000087e                __vector_25
+                0x0000087e                __vector_11
+                0x0000087e                __vector_13
+                0x0000087e                __vector_17
+                0x0000087e                __vector_19
+                0x0000087e                __vector_7
+                0x0000087e                __vector_27
+                0x0000087e                __vector_5
+                0x0000087e                __vector_33
+                0x0000087e                __vector_4
+                0x0000087e                __vector_9
+                0x0000087e                __vector_2
+                0x0000087e                __vector_21
+                0x0000087e                __vector_15
+                0x0000087e                __vector_29
+                0x0000087e                __vector_8
+                0x0000087e                __vector_26
+                0x0000087e                __vector_14
+                0x0000087e                __vector_10
+                0x0000087e                __vector_16
+                0x0000087e                __vector_18
+                0x0000087e                __vector_20
+ .text          0x00000882        0x0 main.o
+ .text          0x00000882      0x33c Peripheral/uart.o
+                0x00000882                uart_init
+                0x000008b6                uart_tx
+                0x000008be                uart_print
+                0x000008d8                uart_putc
+                0x000008dc                uart_print_hex16
+                0x00000978                uart_print_int16
+                0x000009f0                uart_print_hex
+                0x00000a50                uart_print_uint32
+                0x00000ae4                uart_print_float
+ .text          0x00000bbe       0x54 Peripheral/leds.o
+                0x00000bbe                LED_Init
+                0x00000bcc                LED_SetCH
+                0x00000bf0                LED_SetRunStop
+ .text          0x00000c12       0xae Peripheral/input.o
+                0x00000c12                keypad_init
+                0x00000c16                keypad_poll
+                0x00000c32                configure_encoder
+                0x00000c44                read_encoder
+                0x00000c52                update_all_encoders
+                0x00000c6a                setup_encoder
+ .text          0x00000cc0     0x122c Peripheral/video.o
+                0x00000cc0                swap_int16
+                0x00000cda                video_config
+                0x00000cec                vga_set_cursor
+                0x00000cfe                vga_setTextFont
+                0x00000d0a                vga_setTextSize
+                0x00000d1e                vga_setTextColor
+                0x00000d30                vga_pixel_fast
+                0x00000d5c                test_fill
+                0x00000d98                vga_clear_screen
+                0x00000de0                vga_fillRect
+                0x00000e44                vga_drawChar
+                0x0000113e                vga_printAt
+                0x000011c4                vga_drawFastHLine
+                0x00001212                vga_drawFastVLine
+                0x0000125c                vga_drawRect
+                0x000012e6                vga_fillCircle
+                0x0000141a                vga_drawLine
+                0x000015f2                vga_printCenteredX
+                0x000016d4                vga_FillTriangle
+                0x00001970                vga_write
+                0x00001a46                vga_Print
+                0x00001a60                vga_Print_int16
+                0x00001b06                vga_print_int
+                0x00001bd6                vga_print_float
+                0x00001cbc                vga_drawLine_Clipped
+ .text          0x00001eec      0x888 display_manager.o
+                0x00001eec                append_str
+                0x00001f02                get_system_status_code
+                0x00001f2e                drawTextButton
+                0x00001fe8                draw_channel_status
+                0x0000218e                update_status_bar
+                0x0000261c                drawStaticInterface
+                0x000026ba                drawMenuButton
+                0x00002772                updateSidebarLabels
+ .text          0x00002774      0x45c fpga_manager.o
+                0x00002774                osc_arm_readout
+                0x00002778                read_fpga_frequency
+                0x00002934                set_dds_frequency
+                0x00002966                set_trigger_level
+                0x00002970                set_trigger_mode
+                0x0000299a                aggiorna_t_div
+                0x000029c6                aggiorna_parametri_hw
+                0x00002a40                aggiorna_registri_dds
+                0x00002a56                osc_write_view_offset
+                0x00002a66                set_base_time
+                0x00002a94                osc_read_triggered
+                0x00002b10                draw_ground_marker
+ .text          0x00002bd0      0x6a6 autoset_manager.o
+                0x00002bd0                init_timer_polling
+                0x00002be0                cerca_indice_timebase
+                0x00002c4e                cerca_indice_vdiv
+                0x00002cb0                get_vpp_raw_points
+                0x00002d08                configura_verticale_smart
+                0x00002dee                draw_autoset_message
+                0x00002e64                check_presence
+                0x00002f26                attesa_campionamento_ms
+                0x00002f92                routine_autoset_dual
+ .text          0x00003276       0xf0 encoder_manager.o
+                0x00003276                write_encoder
+                0x00003302                conf_encoder
+                0x0000333e                set_trig_enc_default
+ .text          0x00003366      0xb28 trace_manager.o
+                0x00003366                calcola_XY_coordinata
+                0x00003432                calcolaYTraccia
+                0x000034dc                draw_dual_trace_from_bram
+                0x0000385e                draw_xy_trace
+                0x00003986                draw_trigger_line
+                0x00003af0                tft_drawGrid
+                0x00003bc2                tft_drawGrid2
+                0x00003ccc                tft_drawGrid_XY
+                0x00003da8                drawPanTrack
+ .text          0x00003e8e      0x11c trigger_manager.o
+                0x00003e8e                calcola_step_trigger
+                0x00003fa4                scope_set_hysteresis
+ .text          0x00003faa      0x85a cursor_manager.o
+                0x00003faa                format_val_unit
+                0x000041d0                calcola_e_stampa_dati_cursori
+                0x000045b8                disegna_linea_cursore_v
+                0x0000460a                disegna_linea_cursore_h
+                0x0000465c                aggiorna_grafica_cursori
+ .text          0x00004804      0xd94 scope.o
+                0x00004804                acquire_and_draw
+                0x0000489c                cycleCoupling
+                0x000048dc                toggleBWLimit
+                0x0000490e                aggiornaMoltiplicatoreSonda
+                0x00004932                cycleProbe
+                0x00004982                toggleFineCoarse
+                0x00004b70                toggleInvert
+                0x00004ba0                handle_channel_button
+                0x00004c34                init_channels
+                0x00004ce0                updateChannelVoltDiv
+                0x00004de4                set_display_mode
+                0x00004e1e                vga_test_bars
+                0x00004ea2                vga_test_brightness
+                0x00004f52                scope_main
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+ .text          0x00005598        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                0x00005598                        . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x00005598       0x7a main.o
+                0x00005598                main
+ .text.libgcc.mul
+                0x00005612        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x00005612       0x28 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+                0x00005612                __udivmodhi4
+ .text.libgcc   0x0000563a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000563a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000563a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000563a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000563a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000563a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x0000563a       0x28 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+                0x0000563a                _div
+                0x0000563a                __divmodhi4
+ .text.libgcc   0x00005662        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00005662        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00005662        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00005662        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00005662        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00005662        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00005662       0x44 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+                0x00005662                __udivmodsi4
+ .text.libgcc   0x000056a6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x000056a6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x000056a6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x000056a6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x000056a6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x000056a6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.div
+                0x000056a6       0x2e C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+                0x000056a6                __divmodsi4
+ .text.libgcc   0x000056d4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x000056d4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x000056d4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x000056d4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x000056d4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x000056d4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.div
+                0x000056d4       0x10 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+                0x000056d4                __negsi2
+ .text.libgcc   0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x000056e4        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x000056e4       0x12 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+                0x000056e4                __tablejump2__
+ .text.libgcc.prologue
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x000056f6        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x000056f6       0x16 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+                0x000056f6                __muluhisi3
+ .text.libgcc.div
+                0x0000570c        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000570c        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000570c        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000570c        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000570c        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000570c        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000570c       0x1e C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+                0x0000570c                __umulhisi3
+ .text.libgcc.div
+                0x0000572a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000572a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000572a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000572a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000572a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000572a        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .text.avr-libc.fplib
+                0x0000572a        0xe C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                0x0000572a                __subsf3
+                0x0000572c                __addsf3
+ .text.avr-libc.fplib
+                0x00005738       0xcc C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                0x0000575a                __addsf3x
+ .text.avr-libc.fplib
+                0x00005804        0xa C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                0x00005804                __nesf2
+                0x00005804                __eqsf2
+                0x00005804                __cmpsf2
+                0x00005804                __ltsf2
+                0x00005804                __lesf2
+ .text.avr-libc.fplib
+                0x0000580e        0x8 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                0x0000580e                __divsf3
+ .text.avr-libc.fplib
+                0x00005816       0xdc C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                0x00005836                __divsf3x
+                0x0000583c                __divsf3_pse
+ .text.avr-libc.fplib
+                0x000058f2        0xe C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+                0x000058f2                __fixsfsi
+ .text.avr-libc.fplib
+                0x00005900       0x5e C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                0x00005900                __fixunssfsi
+ .text.avr-libc.fplib
+                0x0000595e       0x7a C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                0x0000595e                __floatunsisf
+                0x00005962                __floatsisf
+ .text.avr-libc.fplib
+                0x000059d8       0x48 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+                0x000059d8                __fp_cmp
+ .text.avr-libc.fplib
+                0x00005a20        0xc C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                0x00005a20                __fp_inf
+ .text.avr-libc.fplib
+                0x00005a2c        0x6 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                0x00005a2c                __fp_nan
+ .text.avr-libc.fplib
+                0x00005a32        0xe C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                0x00005a32                __fp_pscA
+ .text.avr-libc.fplib
+                0x00005a40        0xe C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                0x00005a40                __fp_pscB
+ .text.avr-libc.fplib
+                0x00005a4e       0x22 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                0x00005a4e                __fp_round
+ .text.avr-libc.fplib
+                0x00005a70       0x44 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                0x00005a70                __fp_split3
+                0x00005a80                __fp_splitA
+ .text.avr-libc.fplib
+                0x00005ab4        0xe C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                0x00005ab4                __fp_zero
+                0x00005ab6                __fp_szero
+ .text.avr-libc.fplib
+                0x00005ac2        0xa C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+                0x00005ac2                __gesf2
+                0x00005ac2                __gtsf2
+ .text.avr-libc.fplib
+                0x00005acc        0x8 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                0x00005acc                __mulsf3
+ .text.avr-libc.fplib
+                0x00005ad4       0xd2 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                0x00005af2                __mulsf3x
+                0x00005af8                __mulsf3_pse
+ .text.avr-libc
+                0x00005ba6       0x40 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+                0x00005ba6                dtostrf
+                0x00005ba6                ftostrf
+ .text.avr-libc
+                0x00005be6      0x2de C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+                0x00005be6                dtoa_prf
+                0x00005be6                ftoa_prf
+ .text.avr-libc
+                0x00005ec4      0x1ba C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                0x00005ec4                __ftoa_engine
+                0x0000607e                        . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000607e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+                0x0000607e                _exit
+                0x0000607e                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000607e        0x4 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+ .progmemx.data.ftoa_engine
+                0x00006082       0xfa C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                0x0000617c                        . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ .jumptables.gcc.write_encoder
+                0x0000617c        0xe encoder_manager.o
+ .jumptables.gcc.scope_main
+                0x0000618a       0x24 scope.o
+                0x000061ae                        _etext = .
+
+.data           0x00800100      0x2d8 load address 0x000061ae
+                0x00800100                        PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x00800100        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+ .data          0x00800100        0x0 main.o
+ .data          0x00800100        0x0 Peripheral/uart.o
+ .data          0x00800100        0x0 Peripheral/leds.o
+ .data          0x00800100        0x0 Peripheral/input.o
+ .data          0x00800100        0x5 Peripheral/video.o
+                0x00800100                textwrap
+                0x00800101                _height
+                0x00800103                _width
+ .data          0x00800105        0x5 display_manager.o
+                0x00800106                old_freq
+ .data          0x0080010a        0x0 fpga_manager.o
+ .data          0x0080010a        0x0 autoset_manager.o
+ .data          0x0080010a        0x0 encoder_manager.o
+ .data          0x0080010a        0xa trace_manager.o
+                0x0080010a                old_buffer_b
+                0x0080010c                old_buffer_a
+                0x0080010e                ch2_buffer
+                0x00800110                ch1_buffer
+ .data          0x00800114        0x0 trigger_manager.o
+ .data          0x00800114       0x13 cursor_manager.o
+                0x0080011e                cursor_h_b
+                0x00800120                cursor_h_a
+                0x00800122                cursor_v_b
+                0x00800124                cursor_v_a
+                0x00800126                cursor_source
+ .data          0x00800127       0x47 scope.o
+                0x00800127                time_base_labels
+                0x00800151                is_vectors
+                0x00800152                old_meas_active
+                0x00800153                old_meas_type
+                0x00800154                old_meas_source
+                0x00800155                prev_enc_trig_val
+                0x00800157                prev_trigger_level
+                0x00800159                prev_view_offset
+                0x0080015b                trigger_hysteresis
+                0x0080015c                trigger_source
+                0x0080015d                old_trigger_level_12bit
+                0x0080015f                trigger_level_12bit
+                0x00800161                prev_time_div_sel
+                0x00800162                time_div_sel_changed
+                0x00800163                time_div_sel
+                0x00800164                old_current_time_base_idx
+                0x00800165                is_running
+                0x00800166                oldMenu
+                0x00800167                currentMenu
+                0x00800168                buffers_vecchi
+                0x0080016c                misure
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+ .data          0x0080016e        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x0080016e        0x6 display_manager.o
+ .rodata        0x00800174       0xac scope.o
+                0x00800190                timebase_seconds
+                0x008001e4                trigger_steps_table
+                0x008001f8                v_div_values
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800220      0x1b7 main.o
+                                 0x30 (size before relaxing)
+ .rodata.str1.1
+                0x008003d7       0x11 Peripheral/uart.o
+ .rodata.str1.1
+                0x008003d7        0x6 Peripheral/video.o
+ .rodata.str1.1
+                0x008003d7       0x84 display_manager.o
+ .rodata.str1.1
+                0x008003d7        0x8 autoset_manager.o
+ .rodata.str1.1
+                0x008003d7       0x1e cursor_manager.o
+ .rodata.str1.1
+                0x008003d7       0xe3 scope.o
+ *(.gnu.linkonce.r*)
+                0x008004ba                        . = ALIGN (0x2)
+ *fill*         0x008003d7        0x1 
+                0x008003d8                        _edata = .
+                0x008003d8                        PROVIDE (__data_end = .)
+
+.bss            0x008003d8      0x17e
+                0x008003d8                        PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x008003d8        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+ .bss           0x008003d8        0x0 main.o
+ .bss           0x008003d8        0x0 Peripheral/uart.o
+ .bss           0x008003d8        0x0 Peripheral/leds.o
+ .bss           0x008003d8        0xe Peripheral/input.o
+                0x008003d8                encoder_values
+ .bss           0x008003e6       0x19 Peripheral/video.o
+                0x008003e6                rotation
+                0x008003e7                textdatum
+                0x008003e8                textsize
+                0x008003e9                textfont
+                0x008003ea                padX
+                0x008003ec                win_ye
+                0x008003ee                win_xe
+                0x008003f0                cursor_y
+                0x008003f2                cursor_x
+                0x008003f4                addr_col
+                0x008003f6                addr_row
+                0x008003f8                fontsloaded
+                0x008003fa                textbgcolor
+                0x008003fc                textcolor
+                0x008003fe                _rotation
+ .bss           0x008003ff        0x0 display_manager.o
+ .bss           0x008003ff       0x8c fpga_manager.o
+                0x008003ff                view_offset
+ .bss           0x0080048b        0x0 autoset_manager.o
+ .bss           0x0080048b        0x1 encoder_manager.o
+                0x0080048b                current_enc_mode
+ .bss           0x0080048c       0x30 trace_manager.o
+                0x0080048c                gnd_mark_c
+                0x00800494                gnd_mark_b
+                0x0080049c                gnd_mark_a
+                0x008004a4                old_c
+                0x008004a8                old_b
+                0x008004ac                old_a
+ .bss           0x008004bc        0x0 trigger_manager.o
+ .bss           0x008004bc       0x37 cursor_manager.o
+                0x008004bc                str_tb
+                0x008004d0                str_ta
+                0x008004e4                cursor_select
+                0x008004e5                cursor_type
+ .bss           0x008004f3       0x63 scope.o
+                0x008004f3                is_xy_mode
+                0x008004f4                old_f_active
+                0x008004f5                trigger_slope
+                0x008004f6                trigger_mode
+                0x008004f7                current_time_base_idx
+                0x008004f8                pan_flag
+                0x008004f9                freeze
+                0x008004fa                ch2
+                0x00800526                ch1
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+ .bss           0x00800556        0x0 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800556                        PROVIDE (__bss_end = .)
+                0x000061ae                        __data_load_start = LOADADDR (.data)
+                0x00006486                        __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800556        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x00800556                        _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+                0x00000000                        __flmap_init_label = DEFINED (__flmap_noinit_start)?__flmap_noinit_start:0x0
+                0x00000000                        __flmap = DEFINED (__flmap)?__flmap:0x0
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                        __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f main.o
+                                 0x30 (size before relaxing)
+ .comment       0x0000002f       0x30 Peripheral/uart.o
+ .comment       0x0000002f       0x30 Peripheral/leds.o
+ .comment       0x0000002f       0x30 Peripheral/input.o
+ .comment       0x0000002f       0x30 Peripheral/video.o
+ .comment       0x0000002f       0x30 display_manager.o
+ .comment       0x0000002f       0x30 fpga_manager.o
+ .comment       0x0000002f       0x30 autoset_manager.o
+ .comment       0x0000002f       0x30 encoder_manager.o
+ .comment       0x0000002f       0x30 trace_manager.o
+ .comment       0x0000002f       0x30 trigger_manager.o
+ .comment       0x0000002f       0x30 cursor_manager.o
+ .comment       0x0000002f       0x30 scope.o
+ .comment       0x0000002f       0x30 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+ .comment       0x0000002f       0x30 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x3c C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x780
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x780 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+
+.debug_abbrev   0x00000000      0x718
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x718 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+
+.debug_line     0x00000000       0x1d
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1d C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x27d
+ *(.debug_str)
+ .debug_str     0x00000000      0x27d C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(firmware.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+LED_Init                                          Peripheral/leds.o
+                                                  main.o
+LED_SetCH                                         Peripheral/leds.o
+                                                  scope.o
+LED_SetRunStop                                    Peripheral/leds.o
+                                                  scope.o
+                                                  display_manager.o
+__DATA_REGION_LENGTH__                            C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__DATA_REGION_ORIGIN__                            C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__EEPROM_REGION_LENGTH__                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__FUSE_REGION_LENGTH__                            C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__TEXT_REGION_LENGTH__                            C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__TEXT_REGION_ORIGIN__                            C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__addsf3                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                                                  trace_manager.o
+                                                  fpga_manager.o
+__addsf3x                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+__bad_interrupt                                   C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__bss_end                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+__bss_start                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+__cmpsf2                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+__data_end                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+__data_load_start                                 C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+__data_start                                      C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+__divmodhi4                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+                                                  trace_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+__divmodsi4                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+                                                  display_manager.o
+                                                  Peripheral/video.o
+__divsf3                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+                                                  Peripheral/video.o
+__divsf3_pse                                      C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+__divsf3x                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+__do_clear_bss                                    C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_clear_bss.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  encoder_manager.o
+                                                  fpga_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/input.o
+__do_copy_data                                    C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_copy_data.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+                                                  main.o
+__eqsf2                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                                                  cursor_manager.o
+__fixsfsi                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+                                                  scope.o
+                                                  trace_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+                                                  Peripheral/video.o
+__fixunssfsi                                      C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+                                                  fpga_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+__floatsisf                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+                                                  Peripheral/video.o
+__floatunsisf                                     C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+__fp_cmp                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+__fp_inf                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_nan                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_pscA                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_pscB                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_round                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+__fp_split3                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_splitA                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+__fp_szero                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixsfsi.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+__fp_zero                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__ftoa_engine                                     C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+__gesf2                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+                                                  cursor_manager.o
+                                                  autoset_manager.o
+__gtsf2                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(gesf2.o)
+                                                  cursor_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+__heap_end                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__init                                            C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__lesf2                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                                                  trigger_manager.o
+__ltsf2                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+__mulsf3                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+__mulsf3_pse                                      C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+__mulsf3x                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+__muluhisi3                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+                                                  display_manager.o
+__negsi2                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_negsi2.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+__nesf2                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                                                  cursor_manager.o
+                                                  display_manager.o
+__stack                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__subsf3                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                                                  scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  fpga_manager.o
+                                                  Peripheral/video.o
+                                                  Peripheral/uart.o
+__tablejump2__                                    C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_tablejump2.o)
+                                                  scope.o
+                                                  encoder_manager.o
+__udivmodhi4                                      C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodhi4.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+                                                  trace_manager.o
+__udivmodsi4                                      C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_udivmodsi4.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodsi4.o)
+                                                  trace_manager.o
+                                                  Peripheral/uart.o
+__umulhisi3                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_umulhisi3.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_muluhisi3.o)
+__vector_1                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_10                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_11                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_12                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_13                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_14                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_15                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_16                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_17                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_18                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_19                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_2                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_20                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_21                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_22                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_23                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_24                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_25                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_26                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_27                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_28                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_29                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_3                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_30                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_31                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_32                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_33                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_34                                       C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_4                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_5                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_6                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_7                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_8                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_9                                        C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_default                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+__vectors                                         C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+_div                                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_divmodhi4.o)
+_exit                                             C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+_height                                           Peripheral/video.o
+_rotation                                         Peripheral/video.o
+_width                                            Peripheral/video.o
+acquire_and_draw                                  scope.o
+addr_col                                          Peripheral/video.o
+addr_row                                          Peripheral/video.o
+aggiornaMoltiplicatoreSonda                       scope.o
+aggiorna_grafica_cursori                          cursor_manager.o
+aggiorna_parametri_hw                             fpga_manager.o
+                                                  scope.o
+aggiorna_registri_dds                             fpga_manager.o
+aggiorna_t_div                                    fpga_manager.o
+append_str                                        display_manager.o
+                                                  cursor_manager.o
+attesa_campionamento_ms                           autoset_manager.o
+buffers_vecchi                                    scope.o
+calcolaYTraccia                                   trace_manager.o
+calcola_XY_coordinata                             trace_manager.o
+calcola_e_stampa_dati_cursori                     cursor_manager.o
+calcola_step_trigger                              trigger_manager.o
+                                                  scope.o
+cerca_indice_timebase                             autoset_manager.o
+cerca_indice_vdiv                                 autoset_manager.o
+ch1                                               scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+ch1_buffer                                        trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+ch2                                               scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+ch2_buffer                                        trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+check_presence                                    autoset_manager.o
+chr_f16_20                                        Peripheral/video.o
+chr_f16_21                                        Peripheral/video.o
+chr_f16_22                                        Peripheral/video.o
+chr_f16_23                                        Peripheral/video.o
+chr_f16_24                                        Peripheral/video.o
+chr_f16_25                                        Peripheral/video.o
+chr_f16_26                                        Peripheral/video.o
+chr_f16_27                                        Peripheral/video.o
+chr_f16_28                                        Peripheral/video.o
+chr_f16_29                                        Peripheral/video.o
+chr_f16_2A                                        Peripheral/video.o
+chr_f16_2B                                        Peripheral/video.o
+chr_f16_2C                                        Peripheral/video.o
+chr_f16_2D                                        Peripheral/video.o
+chr_f16_2E                                        Peripheral/video.o
+chr_f16_2F                                        Peripheral/video.o
+chr_f16_30                                        Peripheral/video.o
+chr_f16_31                                        Peripheral/video.o
+chr_f16_32                                        Peripheral/video.o
+chr_f16_33                                        Peripheral/video.o
+chr_f16_34                                        Peripheral/video.o
+chr_f16_35                                        Peripheral/video.o
+chr_f16_36                                        Peripheral/video.o
+chr_f16_37                                        Peripheral/video.o
+chr_f16_38                                        Peripheral/video.o
+chr_f16_39                                        Peripheral/video.o
+chr_f16_3A                                        Peripheral/video.o
+chr_f16_3B                                        Peripheral/video.o
+chr_f16_3C                                        Peripheral/video.o
+chr_f16_3D                                        Peripheral/video.o
+chr_f16_3E                                        Peripheral/video.o
+chr_f16_3F                                        Peripheral/video.o
+chr_f16_40                                        Peripheral/video.o
+chr_f16_41                                        Peripheral/video.o
+chr_f16_42                                        Peripheral/video.o
+chr_f16_43                                        Peripheral/video.o
+chr_f16_44                                        Peripheral/video.o
+chr_f16_45                                        Peripheral/video.o
+chr_f16_46                                        Peripheral/video.o
+chr_f16_47                                        Peripheral/video.o
+chr_f16_48                                        Peripheral/video.o
+chr_f16_49                                        Peripheral/video.o
+chr_f16_4A                                        Peripheral/video.o
+chr_f16_4B                                        Peripheral/video.o
+chr_f16_4C                                        Peripheral/video.o
+chr_f16_4D                                        Peripheral/video.o
+chr_f16_4E                                        Peripheral/video.o
+chr_f16_4F                                        Peripheral/video.o
+chr_f16_50                                        Peripheral/video.o
+chr_f16_51                                        Peripheral/video.o
+chr_f16_52                                        Peripheral/video.o
+chr_f16_53                                        Peripheral/video.o
+chr_f16_54                                        Peripheral/video.o
+chr_f16_55                                        Peripheral/video.o
+chr_f16_56                                        Peripheral/video.o
+chr_f16_57                                        Peripheral/video.o
+chr_f16_58                                        Peripheral/video.o
+chr_f16_59                                        Peripheral/video.o
+chr_f16_5A                                        Peripheral/video.o
+chr_f16_5B                                        Peripheral/video.o
+chr_f16_5C                                        Peripheral/video.o
+chr_f16_5D                                        Peripheral/video.o
+chr_f16_5E                                        Peripheral/video.o
+chr_f16_5F                                        Peripheral/video.o
+chr_f16_60                                        Peripheral/video.o
+chr_f16_61                                        Peripheral/video.o
+chr_f16_62                                        Peripheral/video.o
+chr_f16_63                                        Peripheral/video.o
+chr_f16_64                                        Peripheral/video.o
+chr_f16_65                                        Peripheral/video.o
+chr_f16_66                                        Peripheral/video.o
+chr_f16_67                                        Peripheral/video.o
+chr_f16_68                                        Peripheral/video.o
+chr_f16_69                                        Peripheral/video.o
+chr_f16_6A                                        Peripheral/video.o
+chr_f16_6B                                        Peripheral/video.o
+chr_f16_6C                                        Peripheral/video.o
+chr_f16_6D                                        Peripheral/video.o
+chr_f16_6E                                        Peripheral/video.o
+chr_f16_6F                                        Peripheral/video.o
+chr_f16_70                                        Peripheral/video.o
+chr_f16_71                                        Peripheral/video.o
+chr_f16_72                                        Peripheral/video.o
+chr_f16_73                                        Peripheral/video.o
+chr_f16_74                                        Peripheral/video.o
+chr_f16_75                                        Peripheral/video.o
+chr_f16_76                                        Peripheral/video.o
+chr_f16_77                                        Peripheral/video.o
+chr_f16_78                                        Peripheral/video.o
+chr_f16_79                                        Peripheral/video.o
+chr_f16_7A                                        Peripheral/video.o
+chr_f16_7B                                        Peripheral/video.o
+chr_f16_7C                                        Peripheral/video.o
+chr_f16_7D                                        Peripheral/video.o
+chr_f16_7E                                        Peripheral/video.o
+chr_f16_7F                                        Peripheral/video.o
+chrtbl_f16                                        Peripheral/video.o
+conf_encoder                                      encoder_manager.o
+                                                  scope.o
+                                                  autoset_manager.o
+configura_verticale_smart                         autoset_manager.o
+configure_encoder                                 Peripheral/input.o
+                                                  scope.o
+currentMenu                                       scope.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+current_enc_mode                                  encoder_manager.o
+                                                  scope.o
+current_time_base_idx                             scope.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+cursor_h_a                                        cursor_manager.o
+                                                  scope.o
+cursor_h_b                                        cursor_manager.o
+                                                  scope.o
+cursor_select                                     cursor_manager.o
+cursor_source                                     cursor_manager.o
+                                                  scope.o
+cursor_type                                       cursor_manager.o
+                                                  scope.o
+                                                  autoset_manager.o
+cursor_v_a                                        cursor_manager.o
+                                                  scope.o
+cursor_v_b                                        cursor_manager.o
+                                                  scope.o
+cursor_x                                          Peripheral/video.o
+cursor_y                                          Peripheral/video.o
+cycleCoupling                                     scope.o
+cycleProbe                                        scope.o
+dds_table                                         scope.o
+                                                  fpga_manager.o
+disegna_linea_cursore_h                           cursor_manager.o
+disegna_linea_cursore_v                           cursor_manager.o
+drawMenuButton                                    display_manager.o
+                                                  scope.o
+drawPanTrack                                      trace_manager.o
+drawStaticInterface                               display_manager.o
+                                                  scope.o
+drawTextButton                                    display_manager.o
+                                                  cursor_manager.o
+draw_autoset_message                              autoset_manager.o
+draw_channel_status                               display_manager.o
+draw_dual_trace_from_bram                         trace_manager.o
+                                                  scope.o
+draw_ground_marker                                fpga_manager.o
+draw_trigger_line                                 trace_manager.o
+draw_xy_trace                                     trace_manager.o
+                                                  scope.o
+dtoa_prf                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+dtostrf                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+                                                  cursor_manager.o
+encoder_values                                    Peripheral/input.o
+                                                  scope.o
+exit                                              C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/avr51\libgcc.a(_exit.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+fontsloaded                                       Peripheral/video.o
+format_val_unit                                   cursor_manager.o
+freeze                                            scope.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+ftoa_prf                                          C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtoa_prf.o)
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+ftostrf                                           C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51\libc.a(dtostrf.o)
+get_system_status_code                            display_manager.o
+get_vpp_raw_points                                autoset_manager.o
+gnd_mark_a                                        trace_manager.o
+gnd_mark_b                                        trace_manager.o
+gnd_mark_c                                        trace_manager.o
+handle_channel_button                             scope.o
+init_channels                                     scope.o
+init_timer_polling                                autoset_manager.o
+                                                  scope.o
+is_running                                        scope.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+is_vectors                                        scope.o
+is_xy_mode                                        scope.o
+keypad_init                                       Peripheral/input.o
+                                                  main.o
+keypad_poll                                       Peripheral/input.o
+                                                  scope.o
+main                                              main.o
+                                                  C:/avr8-gnu-toolchain/bin/../lib/gcc/avr/15.1.0/../../../../avr/lib/avr51/crtatmega128.o
+misure                                            scope.o
+                                                  display_manager.o
+oldMenu                                           scope.o
+old_a                                             trace_manager.o
+old_b                                             trace_manager.o
+old_buffer_a                                      trace_manager.o
+                                                  scope.o
+old_buffer_b                                      trace_manager.o
+                                                  scope.o
+old_c                                             trace_manager.o
+old_current_time_base_idx                         scope.o
+                                                  display_manager.o
+old_f_active                                      scope.o
+                                                  display_manager.o
+old_freq                                          display_manager.o
+old_meas_active                                   scope.o
+                                                  display_manager.o
+old_meas_source                                   scope.o
+                                                  display_manager.o
+old_meas_type                                     scope.o
+                                                  display_manager.o
+old_trigger_level_12bit                           scope.o
+                                                  display_manager.o
+osc_arm_readout                                   fpga_manager.o
+                                                  scope.o
+osc_read_triggered                                fpga_manager.o
+                                                  scope.o
+                                                  autoset_manager.o
+osc_write_view_offset                             fpga_manager.o
+                                                  scope.o
+padX                                              Peripheral/video.o
+pan_flag                                          scope.o
+                                                  trace_manager.o
+                                                  fpga_manager.o
+prev_enc_trig_val                                 scope.o
+prev_time_div_sel                                 scope.o
+prev_trigger_level                                scope.o
+prev_view_offset                                  scope.o
+read_encoder                                      Peripheral/input.o
+read_fpga_frequency                               fpga_manager.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+rotation                                          Peripheral/video.o
+routine_autoset_dual                              autoset_manager.o
+                                                  scope.o
+scope_main                                        scope.o
+                                                  main.o
+scope_set_hysteresis                              trigger_manager.o
+                                                  scope.o
+set_base_time                                     fpga_manager.o
+                                                  scope.o
+                                                  autoset_manager.o
+set_dds_frequency                                 fpga_manager.o
+set_display_mode                                  scope.o
+set_trig_enc_default                              encoder_manager.o
+                                                  scope.o
+set_trigger_level                                 fpga_manager.o
+                                                  scope.o
+                                                  autoset_manager.o
+set_trigger_mode                                  fpga_manager.o
+                                                  scope.o
+                                                  autoset_manager.o
+setup_encoder                                     Peripheral/input.o
+                                                  scope.o
+                                                  encoder_manager.o
+str_ta                                            cursor_manager.o
+str_tb                                            cursor_manager.o
+swap_int16                                        Peripheral/video.o
+test_fill                                         Peripheral/video.o
+textbgcolor                                       Peripheral/video.o
+textcolor                                         Peripheral/video.o
+textdatum                                         Peripheral/video.o
+textfont                                          Peripheral/video.o
+textsize                                          Peripheral/video.o
+textwrap                                          Peripheral/video.o
+tft_drawGrid                                      trace_manager.o
+                                                  scope.o
+tft_drawGrid2                                     trace_manager.o
+tft_drawGrid_XY                                   trace_manager.o
+                                                  scope.o
+time_base_labels                                  scope.o
+                                                  display_manager.o
+time_div_sel                                      scope.o
+time_div_sel_changed                              scope.o
+timebase_seconds                                  scope.o
+                                                  cursor_manager.o
+                                                  autoset_manager.o
+toggleBWLimit                                     scope.o
+toggleFineCoarse                                  scope.o
+toggleInvert                                      scope.o
+trigger_hysteresis                                scope.o
+trigger_level_12bit                               scope.o
+                                                  encoder_manager.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+trigger_mode                                      scope.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+                                                  display_manager.o
+trigger_slope                                     scope.o
+                                                  autoset_manager.o
+                                                  fpga_manager.o
+trigger_source                                    scope.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+trigger_steps_table                               scope.o
+uart_init                                         Peripheral/uart.o
+                                                  main.o
+uart_print                                        Peripheral/uart.o
+                                                  scope.o
+                                                  main.o
+uart_print_float                                  Peripheral/uart.o
+uart_print_hex                                    Peripheral/uart.o
+uart_print_hex16                                  Peripheral/uart.o
+uart_print_int16                                  Peripheral/uart.o
+                                                  scope.o
+uart_print_uint32                                 Peripheral/uart.o
+uart_putc                                         Peripheral/uart.o
+uart_tx                                           Peripheral/uart.o
+updateChannelVoltDiv                              scope.o
+updateSidebarLabels                               display_manager.o
+                                                  scope.o
+update_all_encoders                               Peripheral/input.o
+                                                  scope.o
+update_status_bar                                 display_manager.o
+                                                  scope.o
+v_div_values                                      scope.o
+                                                  autoset_manager.o
+vga_FillTriangle                                  Peripheral/video.o
+                                                  trace_manager.o
+                                                  fpga_manager.o
+vga_Print                                         Peripheral/video.o
+                                                  display_manager.o
+vga_Print_int16                                   Peripheral/video.o
+                                                  display_manager.o
+vga_clear_screen                                  Peripheral/video.o
+                                                  display_manager.o
+                                                  main.o
+vga_drawChar                                      Peripheral/video.o
+vga_drawFastHLine                                 Peripheral/video.o
+                                                  cursor_manager.o
+                                                  trace_manager.o
+                                                  display_manager.o
+vga_drawFastVLine                                 Peripheral/video.o
+                                                  cursor_manager.o
+vga_drawLine                                      Peripheral/video.o
+                                                  display_manager.o
+vga_drawLine_Clipped                              Peripheral/video.o
+                                                  trace_manager.o
+vga_drawRect                                      Peripheral/video.o
+                                                  trace_manager.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+vga_fillCircle                                    Peripheral/video.o
+vga_fillRect                                      Peripheral/video.o
+                                                  scope.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+vga_pixel_fast                                    Peripheral/video.o
+                                                  scope.o
+                                                  trace_manager.o
+vga_printAt                                       Peripheral/video.o
+                                                  display_manager.o
+vga_printCenteredX                                Peripheral/video.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+vga_print_float                                   Peripheral/video.o
+                                                  display_manager.o
+vga_print_int                                     Peripheral/video.o
+vga_setTextColor                                  Peripheral/video.o
+                                                  display_manager.o
+                                                  main.o
+vga_setTextFont                                   Peripheral/video.o
+                                                  main.o
+vga_setTextSize                                   Peripheral/video.o
+                                                  autoset_manager.o
+                                                  display_manager.o
+                                                  main.o
+vga_set_cursor                                    Peripheral/video.o
+                                                  display_manager.o
+vga_test_bars                                     scope.o
+vga_test_brightness                               scope.o
+vga_write                                         Peripheral/video.o
+video_config                                      Peripheral/video.o
+                                                  main.o
+view_offset                                       fpga_manager.o
+                                                  scope.o
+                                                  trace_manager.o
+widtbl_f16                                        Peripheral/video.o
+win_xe                                            Peripheral/video.o
+win_ye                                            Peripheral/video.o
+write_encoder                                     encoder_manager.o
+                                                  scope.o
+                                                  autoset_manager.o

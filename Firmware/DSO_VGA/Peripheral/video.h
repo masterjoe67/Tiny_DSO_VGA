@@ -22,12 +22,12 @@
 #define VIDEO_BRAM_BASE ((volatile uint16_t*)0x4100)
 
 /* --- DEFINIZIONI INDIRIZZI REGISTRI (BRAM/CONFIG) --- */
-#define VIDEO_REG_X_L      (*(volatile uint8_t *)(0x4050))
-#define VIDEO_REG_X_H      (*(volatile uint8_t *)(0x4051))
-#define VIDEO_REG_Y_L      (*(volatile uint8_t *)(0x4052))
-#define VIDEO_REG_Y_H      (*(volatile uint8_t *)(0x4053))
-#define VIDEO_REG_DATA_L   (*(volatile uint8_t *)(0x4054))
-#define VIDEO_REG_DATA_H   (*(volatile uint8_t *)(0x4055))
+#define VIDEO_REG_X_L      (*(volatile uint8_t *)(0x5050))
+#define VIDEO_REG_X_H      (*(volatile uint8_t *)(0x5051))
+#define VIDEO_REG_Y_L      (*(volatile uint8_t *)(0x5052))
+#define VIDEO_REG_Y_H      (*(volatile uint8_t *)(0x5053))
+#define VIDEO_REG_DATA_L   (*(volatile uint8_t *)(0x5054))
+#define VIDEO_REG_DATA_H   (*(volatile uint8_t *)(0x5055))
 
 // Colori Base
 // Formato binario: 0000000 RRRG GGBB B

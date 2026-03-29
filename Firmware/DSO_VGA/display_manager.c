@@ -303,22 +303,22 @@ void draw_channel_status(Channel *ch, uint16_t xPos, uint16_t yPos, bool force) 
 
 void drawStaticInterface() {
     // 1. Pulisce tutto lo schermo
-    //tft_fillScreen(BLACK);
+
     vga_clear_screen(BLACK);
     // 2. Barra Superiore (Status e Misure rapide)
-    vga_fillRect(0, 0, 409, 20, DARKGREY);
+    vga_fillRect(0, 0, 409, 20, GREY);
     vga_printAt("Mje", 10, 5, GREEN, DARKGREY, 2);
     //vga_printAt("T: 100uS", 120, 5, WHITE, DARKGREY);
     //vga_printAt("Vpp: 3.24V", 250, 5, YELLOW, DARKGREY);
 
     // --- TITOLO MENU A DESTRA (Sopra i tasti) ---
-    const char* menuName;
+    /*const char* menuName;
     if (currentMenu == MENU_CH1)      menuName = "CH 1";
     else if (currentMenu == MENU_CH2) menuName = "CH 2";
     else if (currentMenu == MENU_TRIG) menuName = "TRIG";
     else                              menuName = "MENU";
     
-    vga_printAt(menuName, 430, 5, WHITE, DARKGREY, 2);
+    vga_printAt(menuName, SIDEBAR_X, 5, WHITE, DARKGREY, 2);*/
 
     // 3. Cornice Area Traccia (400x240)
     vga_drawRect(MARGIN_X - 1, MARGIN_Y - 1, TRACE_W + 2, TRACE_H + 2, WHITE);
@@ -330,21 +330,21 @@ void drawStaticInterface() {
 
     updateSidebarLabels(); // Aggiorna tutte le etichette in base allo stato attuale (usa i dati nelle struct)
     // 6. Ripristina la griglia
-    tft_drawGrid(GREY);
+    //tft_drawGrid(GREY);
 }
 
 void drawMenuButton(uint8_t index, const char* label, const char* data, bool active, uint16_t color) {
-    uint16_t y = 25 + (index * 49); // Calcola posizione Y in base all'indice
+    uint16_t y = MARGIN_Y + (index * 60); // Calcola posizione Y in base all'indice
     uint16_t bgColor = BLACK;       // Definiamo lo sfondo fisso a nero
     
-    vga_fillRect(410, y, 68, 48, bgColor); // Pulisce l'area del bottone prima di ridisegnarlo
+    vga_fillRect(SIDEBAR_X, y, 100, 59, bgColor); // Pulisce l'area del bottone prima di ridisegnarlo
     // 1. Disegna la cornice del bottone
     //tft_drawRect(410, y, 65, 40, color);
-    vga_drawFastHLine(415, y, 58, color); // Linea di divisione orizzontale
+    vga_drawFastHLine(SIDEBAR_X + 5, y, 100, color); // Linea di divisione orizzontale
 
     // 3. Scrivi il testo passando tutti i parametri richiesti dalla tua funzione
-    vga_printCenteredX(label, 410, 479, y + 5, color, bgColor, 1); 
-    vga_printCenteredX(data, 410, 479, y + 20, color, bgColor, 2);
+    vga_printCenteredX(label, SIDEBAR_X, MAX_X, y + 5, color, bgColor, 1); 
+    vga_printCenteredX(data, SIDEBAR_X, MAX_X, y + 20, color, bgColor, 2);
 }
 
 void updateSidebarLabels() {
@@ -399,9 +399,9 @@ void updateSidebarLabels() {
     }
     
     // Scriviamo il titolo del menu centrato sopra i tasti, con il colore specifico
-    vga_fillRect(410, 0, 79, 20, BLACK);
+    vga_fillRect(SIDEBAR_X, 0, 109, MARGIN_Y, BLACK);
     //vga_fillRect(411, 20, 68, 48, BLACK); // Pulisce l'area dei tasti per evitare residui di menu precedenti
-    vga_printCenteredX(menuTitle, 410, 475, 5, menuColor, BLACK, 2); // Opzione centrata
+    vga_printCenteredX(menuTitle, SIDEBAR_X, 639, 5, menuColor, BLACK, 2); // Opzione centrata
 
     // --- 2. LOGICA TASTI SIDEBAR ---
 
@@ -502,6 +502,6 @@ void updateSidebarLabels() {
         
     }
 
-    vga_drawFastHLine(415, TRACE_H + MARGIN_Y + 2, 58, WHITE);
-    vga_drawFastHLine(415, TRACE_H + MARGIN_Y + TRACE_H + 2, 58, WHITE);
+    vga_drawFastHLine(SIDEBAR_X + 5, TRACE_H + MARGIN_Y + 2, 100, RED);
+    
 }
