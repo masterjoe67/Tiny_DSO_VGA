@@ -5,6 +5,7 @@
 
 #include <avr/io.h>
 #include <stddef.h>
+#include "glcdfont.c"
 
 // FEEDBACK SU INDIRIZZO MMIO 0x08
 // Usiamo l'accesso diretto all'indirizzo I/O 0x08

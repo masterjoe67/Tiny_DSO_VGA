@@ -44,24 +44,25 @@ ui_status_t get_system_status_code(void) {
 }
 
 void drawTextButton(uint8_t index, const char* data1, const char* data2, uint16_t color) {
-    uint16_t y = 25 + (index * 49); // Calcola posizione Y in base all'indice
+    uint16_t y = MARGIN_Y + (index * 76); // Calcola posizione Y in base all'indice
     uint16_t bgColor = BLACK;       // Definiamo lo sfondo fisso a nero
     
-    vga_fillRect(410, y + 12, 68, 34, bgColor); // Pulisce l'area del bottone prima di ridisegnarlo
+    vga_fillRect(SIDEBAR_X, y + 20, 104, 55, bgColor); // Pulisce l'area del bottone prima di ridisegnarlo
     // 1. Disegna la cornice del bottone
     //tft_drawRect(410, y, 65, 40, color);
-    vga_drawFastHLine(415, y, 58, color); // Linea di divisione orizzontale
+    vga_drawFastHLine(SIDEBAR_X + 5, y, 100, color); // Linea di divisione orizzontale
 
     // 3. Scrivi il testo passando tutti i parametri richiesti dalla tua funzione
-    vga_printCenteredX(data1, 410, 479, y + 15, color, bgColor, 2); 
-    vga_printCenteredX(data2, 410, 479, y + 32, color, bgColor, 2);
+    vga_printCenteredX(data1, SIDEBAR_X, MAX_X, y + 35, color, bgColor, 2); 
+    vga_printCenteredX(data2, SIDEBAR_X, MAX_X, y + 52, color, bgColor, 2);
 }
 
 void update_status_bar(bool force) {
     uint16_t yPos = MARGIN_Y + TRACE_H + 10;
     uint16_t xStart = MARGIN_X;
+    vga_setTextSize(2);
+    vga_printAt("Mje", 10, 3, BLUE, BLACK, 2);
     vga_setTextSize(1);
-    vga_printAt("Mje", 10, 5, GREEN, DARKGREY, 2);
     static ui_status_t last_ui_state = 0xFF; // Valore impossibile per forzare il primo disegno
     ui_status_t current_state = get_system_status_code();
     if (force || current_state != last_ui_state) {
@@ -103,7 +104,7 @@ void update_status_bar(bool force) {
 
         // Qui disegni sul TFT (avviene solo una volta per ogni cambio di stato)
         // tft_draw_status(label, color); 
-        vga_printAt(label, 100, 5, color, DARKGREY, 2);
+        vga_printAt(label, 100, 12, color, BLACK, 2);
         last_ui_state = current_state;
     }
 
@@ -334,17 +335,17 @@ void drawStaticInterface() {
 }
 
 void drawMenuButton(uint8_t index, const char* label, const char* data, bool active, uint16_t color) {
-    uint16_t y = MARGIN_Y + (index * 60); // Calcola posizione Y in base all'indice
+    uint16_t y = MARGIN_Y + (index * 76); // Calcola posizione Y in base all'indice
     uint16_t bgColor = BLACK;       // Definiamo lo sfondo fisso a nero
     
-    vga_fillRect(SIDEBAR_X, y, 100, 59, bgColor); // Pulisce l'area del bottone prima di ridisegnarlo
+    vga_fillRect(SIDEBAR_X, y, 104, 75, bgColor); // Pulisce l'area del bottone prima di ridisegnarlo
     // 1. Disegna la cornice del bottone
     //tft_drawRect(410, y, 65, 40, color);
     vga_drawFastHLine(SIDEBAR_X + 5, y, 100, color); // Linea di divisione orizzontale
 
     // 3. Scrivi il testo passando tutti i parametri richiesti dalla tua funzione
-    vga_printCenteredX(label, SIDEBAR_X, MAX_X, y + 5, color, bgColor, 1); 
-    vga_printCenteredX(data, SIDEBAR_X, MAX_X, y + 20, color, bgColor, 2);
+    vga_printCenteredX(label, SIDEBAR_X, MAX_X, y + 5, color, bgColor, 2); 
+    vga_printCenteredX(data, SIDEBAR_X, MAX_X, y + 30, color, bgColor, 2);
 }
 
 void updateSidebarLabels() {
@@ -398,10 +399,11 @@ void updateSidebarLabels() {
             break;
     }
     
+    vga_setTextSize(1);
     // Scriviamo il titolo del menu centrato sopra i tasti, con il colore specifico
     vga_fillRect(SIDEBAR_X, 0, 109, MARGIN_Y, BLACK);
     //vga_fillRect(411, 20, 68, 48, BLACK); // Pulisce l'area dei tasti per evitare residui di menu precedenti
-    vga_printCenteredX(menuTitle, SIDEBAR_X, 639, 5, menuColor, BLACK, 2); // Opzione centrata
+    vga_printCenteredX(menuTitle, SIDEBAR_X, 639, 12, menuColor, BLACK, 2); // Opzione centrata
 
     // --- 2. LOGICA TASTI SIDEBAR ---
 
@@ -502,6 +504,6 @@ void updateSidebarLabels() {
         
     }
 
-    vga_drawFastHLine(SIDEBAR_X + 5, TRACE_H + MARGIN_Y + 2, 100, RED);
+    vga_drawFastHLine(SIDEBAR_X + 5, TRACE_H + MARGIN_Y + 2, 100, WHITE);
     
 }

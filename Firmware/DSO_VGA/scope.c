@@ -114,7 +114,7 @@ const uint16_t trigger_steps_table[10] = {
 
 // Tabella valori DDS aggiornata (21 ingressi)
 // Indice 0: 250ns/div ... Indice 20: 1s/div
-const uint32_t dds_table[21] PROGMEM = {
+/*const uint32_t dds_table[21] PROGMEM = {
     0xFFFFFFFF, // 0: 250ns/div (Zoom x4 - F_samp equiv 160MHz*)
     0xFFFFFFFF, // 1: 500ns/div (Zoom x2 - F_samp equiv 80MHz*)
     0xAAAAAAAA, // 2: 1us/div    (F_samp = 40MHz)
@@ -136,6 +136,33 @@ const uint32_t dds_table[21] PROGMEM = {
     0x0000396F, // 18: 200ms/div (F_samp = 200Hz)
     0x000016F3, // 19: 500ms/div (F_samp = 80Hz)
     0x00000B79  // 20: 1s/div     (F_samp = 40Hz)
+};*/
+
+// Tabella valori DDS aggiornata per 500 campioni (50px/div)
+// Clock di riferimento: 60MHz
+// Formula: Incremento = (F_samp / 60.000.000) * 2^32
+const uint32_t dds_table[21] PROGMEM = {
+    0xFFFFFFFF, // 0: 250ns/div (Zoom - F_samp equiv 200MHz)
+    0xFFFFFFFF, // 1: 500ns/div (Zoom - F_samp equiv 100MHz)
+    0xD5555555, // 2: 1us/div   (F_samp = 50MHz)
+    0x6AAAAAAA, // 3: 2us/div   (F_samp = 25MHz)
+    0x2AAAAAAA, // 4: 5us/div   (F_samp = 10MHz)
+    0x15555555, // 5: 10us/div  (F_samp = 5MHz)
+    0x0AAAAAAA, // 6: 20us/div  (F_samp = 2.5MHz)
+    0x04444444, // 7: 50us/div  (F_samp = 1MHz)
+    0x02222222, // 8: 100us/div (F_samp = 500kHz)
+    0x01111111, // 9: 200us/div (F_samp = 250kHz)
+    0x006D3A06, // 10: 500us/div(F_samp = 100kHz)
+    0x00369D03, // 11: 1ms/div   (F_samp = 50kHz)
+    0x001B4E81, // 12: 2ms/div   (F_samp = 25kHz)
+    0x000AEC33, // 13: 5ms/div   (F_samp = 10kHz)
+    0x00057619, // 14: 10ms/div  (F_samp = 5kHz)
+    0x0002BB0C, // 15: 20ms/div  (F_samp = 2.5kHz)
+    0x0001179E, // 16: 50ms/div  (F_samp = 1kHz)
+    0x00008BCF, // 17: 100ms/div (F_samp = 500Hz)
+    0x000045E7, // 18: 200ms/div (F_samp = 250Hz)
+    0x00001BF6, // 19: 500ms/div (F_samp = 100Hz)
+    0x00000DFB  // 20: 1s/div     (F_samp = 50Hz)
 };
 
 const float timebase_seconds[] = {
@@ -186,7 +213,7 @@ void acquire_and_draw(){
         drawPanTrack();
         aggiorna_grafica_cursori();
     }else{
-        tft_drawGrid_XY(GREY);
+        tft_drawGrid_XY(WHITE);
         draw_xy_trace(&ch1, &ch2, old_buffer_a, old_buffer_b, 500);
     }
     

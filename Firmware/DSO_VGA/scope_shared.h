@@ -80,7 +80,7 @@
 #define FOOTER_Y        (MARGIN_Y + TRACE_H + 10)
 #define SIDEBAR_X       (MARGIN_X + TRACE_W + 10)
 #define CENTER_TRACE_X  (MARGIN_X + (TRACE_W / 2))
-#define OFFSET_XY_AREA  85
+#define OFFSET_XY_AREA  80
 
 #define COUPL_DC  0
 #define COUPL_AC  1
@@ -98,14 +98,14 @@
 #define MENU_ORIZZONTAL 7
 
 // Valori di default per gli encoder (minimo, massimo step, valore iniziale)
-#define OFFSET_Y_MIN -50
-#define OFFSET_Y_MAX 250
+#define OFFSET_Y_MIN 45
+#define OFFSET_Y_MAX 405
 #define OFFSET_Y_STEP 2
-#define OFFSET_Y1_C_VAL 145
-#define OFFSET_Y2_C_VAL 145
-#define POSIZIONE_TOP 115
+#define OFFSET_Y1_C_VAL 230
+#define OFFSET_Y2_C_VAL 230
+#define POSIZIONE_TOP 185
 #define POSIZIONE_BOTTOM 175
-#define POSIZIONE_CENTER 145
+#define POSIZIONE_CENTER 230
 
 #define VDIVCH_MIN 0
 #define VDIVCH_MAX 9

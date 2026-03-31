@@ -216,9 +216,9 @@ void draw_xy_trace(Channel *ch_x, Channel *ch_y, int16_t *old_x_buf, int16_t *ol
     // Confini dell'area XY quadrata
     const int16_t OFFSET_X = OFFSET_XY_AREA; 
     const int16_t X_MIN = OFFSET_X;
-    const int16_t X_MAX = OFFSET_X + 240;
+    const int16_t X_MAX = OFFSET_X + 380;
     const int16_t Y_MIN = MARGIN_Y;
-    const int16_t Y_MAX = MARGIN_Y + 240;
+    const int16_t Y_MAX = MARGIN_Y + 380;
 
     for (uint16_t i = 0; i < length; i++) {
         // --- 1. CANCELLAZIONE (Usa i buffer esistenti) ---
@@ -263,7 +263,7 @@ int16_t calcolaYTraccia(Channel *ch, uint16_t valoreADC_12bit, bool isTrigger) {
     static const float ADC_RESOLUTION = 4096.0f;
     static const float BITS_PER_VOLT = ADC_RESOLUTION / RANGE_TOTALE; // 409.6
     static const float ADC_ZERO = 2048.0f;
-    static const float PIXEL_PER_DIV = 30.0f;
+    static const float PIXEL_PER_DIV = 38.0f;
 
     // 1. Delta rispetto al centro
     float deltaADC = (float)valoreADC_12bit - ADC_ZERO;
@@ -371,45 +371,6 @@ void tft_drawGrid(uint16_t color) {
     }
 }
 
-void tft_drawGrid2(uint16_t color) {
-    int16_t xStart = MARGIN_X;
-    int16_t yStart = MARGIN_Y;
-    int16_t xEnd   = MARGIN_X + TRACE_W;
-    int16_t yEnd   = MARGIN_Y + TRACE_H;
-
-    uint8_t gridSpacing = 50;  // Orizzontale (Tempo)
-    uint8_t gridVSpacing = 38; // Verticale (Tensione)
-    uint8_t dotSpacing  = 4;
-
-    // Calcoliamo le coordinate centrali
-    // Nota: Assicurati che TRACE_W/2 e TRACE_H/2 siano multipli di gridSpacing
-    int16_t xCenter = xStart + (TRACE_W / 2);
-    int16_t yCenter = yStart + (TRACE_H / 2);
-
-    // 1. Linee Orizzontali
-    for (int16_t y = yStart; y <= yEnd; y += gridVSpacing) {
-        uint8_t step = (y == yCenter) ? 2 : dotSpacing;
-        
-        for (int16_t x = xStart; x <= xEnd; x += step) {
-            // Un controllo di sicurezza extra non guasta mai
-            if (x < 520 && y < 480) vga_pixel_fast(x, y, color);
-        }
-
-    }
-
-    // 2. Linee Verticali
-    for (int16_t x = xStart; x <= xEnd; x += gridSpacing) {
-        uint8_t step = (x == xCenter) ? 2 : dotSpacing;
-
-        for (int16_t y = yStart; y <= yEnd; y += step) {
-            // Evitiamo di ridisegnare i punti già fatti dalle linee orizzontali
-            // se y è un multiplo di gridVSpacing (opzionale ma consigliato)
-            if ((y - yStart) % gridVSpacing != 0 || x == xCenter || y == yCenter) {
-                if (x < 520 && y < 480) vga_pixel_fast(x, y, color);
-            }
-        }
-    }
-}
 
 /***************************************************************************************
 ** Function name:           tft_drawGrid_XY
@@ -418,15 +379,15 @@ void tft_drawGrid2(uint16_t color) {
 ***************************************************************************************/
 void tft_drawGrid_XY(uint16_t color) {
     const int16_t OFFSET_X = OFFSET_XY_AREA;
-    const int16_t SIZE = 240;
+    const int16_t SIZE = 380;
     
     int16_t xStart = OFFSET_X;
     int16_t yStart = MARGIN_Y;
     int16_t xEnd   = OFFSET_X + SIZE;
     int16_t yEnd   = MARGIN_Y + SIZE;
 
-    // Spaziatura divisioni: 30 pixel (per avere 8 divisioni in 240px)
-    uint8_t spacing = 30; 
+    
+    uint8_t spacing = 38; // Spaziatura per le divisioni (equivalente a 1V/div)
     uint8_t dotSpacing = 6;
 
     int16_t xCenter = xStart + (SIZE / 2);

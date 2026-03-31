@@ -161,6 +161,116 @@ void vga_fillRect(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color
 }
 
 /***************************************************************************************
+** Function name:           vga_drawCharGL
+** Description:             Draw a single character in the Adafruit GLCD font (5x7)
+***************************************************************************************/
+/*void tft_drawCharGL(int16_t x, int16_t y, unsigned char c, uint16_t color, uint16_t bg, uint8_t size)
+{
+#ifdef LOAD_GLCD
+    // 1. Clipping: evita di scrivere fuori dai margini dello schermo
+    if ((x >= (int16_t)_width) || (y >= (int16_t)_height) || 
+        ((x + 6 * size - 1) < 0) || ((y + 8 * size - 1) < 0)) return;
+
+    bool fillbg = (bg != color);
+
+    // 2. Ottimizzazione per size 1 con sfondo (molto veloce)
+    if ((size == 1) && fillbg)
+    {
+        uint8_t column[6];
+        uint8_t mask = 0x01;
+        
+        // Imposta la finestra 6x8 (5 pixel font + 1 spazio)
+        tft_setAddressWindow(x, y, x + 5, y + 7);
+
+        for (int8_t i = 0; i < 5; i++) column[i] = pgm_read_byte(font + (c * 5) + i);
+        column[5] = 0; // Spazio tra i caratteri
+
+        // L'ST7796S scrive per righe, ma il font GLCD è memorizzato per colonne
+        for (int8_t j = 0; j < 8; j++) {
+            for (int8_t k = 0; k < 6; k++) {
+                if (column[k] & mask) {
+                    tft_data16(color);
+                } else {
+                    tft_data16(bg);
+                }
+            }
+            mask <<= 1;
+        }
+        tft_cmd(0x00); // Chiude la transazione
+    }
+    // 3. Caso per caratteri scalati o senza sfondo
+    else
+    {
+        for (int8_t i = 0; i < 6; i++) {
+            uint8_t line;
+            if (i == 5) line = 0x0;
+            else        line = pgm_read_byte(font + (c * 5) + i);
+
+            for (int8_t j = 0; j < 8; j++) {
+                if (line & 0x1) {
+                    if (size == 1) tft_drawPixel(x + i, y + j, color);
+                    else           tft_fillRect(x + (i * size), y + (j * size), size, size, color);
+                } 
+                else if (fillbg) {
+                    if (size == 1) tft_drawPixel(x + i, y + j, bg);
+                    else           tft_fillRect(x + (i * size), y + (j * size), size, size, bg);
+                }
+                line >>= 1;
+            }
+        }
+    }
+#endif
+}*/
+
+void vga_drawCharGL(int16_t x, int16_t y, unsigned char c, uint16_t color, uint16_t bg, uint8_t size)
+{
+#ifdef LOAD_GLCD
+    // 1. Clipping: Protezione per non uscire dai bordi della VGA
+    if ((x >= 640) || (y >= 480) || ((x + 6 * size - 1) < 0) || ((y + 8 * size - 1) < 0)) return;
+
+    bool fillbg = (bg != color);
+
+    // 2. Ciclo principale sulle 6 colonne (5 font + 1 spazio)
+    for (int8_t i = 0; i < 6; i++) {
+        uint8_t line;
+        if (i == 5) line = 0x0; // Spazio tra i caratteri
+        else        line = pgm_read_byte(font + (c * 5) + i);
+
+        // 3. Ciclo sugli 8 bit della colonna (Altezza carattere)
+        for (int8_t j = 0; j < 8; j++) {
+            if (line & 0x1) {
+                // PIXEL ATTIVO
+                if (size == 1) {
+                    vga_pixel_fast(x + i, y + j, color);
+                } else {
+                    // Gestione Scalata (es. Size 2, 3...)
+                    vga_fillRect(x + (i * size), y + (j * size), size, size, color);
+                }
+            } 
+            else if (fillbg) {
+                // SFONDO (Solo se bg != color, ovvero NO trasparenza)
+                if (size == 1) {
+                    vga_pixel_fast(x + i, y + j, bg);
+                } else {
+                    vga_fillRect(x + (i * size), y + (j * size), size, size, bg);
+                }
+            }
+            line >>= 1; // Scorri al bit successivo della colonna
+        }
+    }
+#endif
+}
+
+// Funzione di supporto per i rettangoli scalati
+void vga_fillRect_fast(int16_t x, int16_t y, uint8_t w, uint8_t h, uint16_t color) {
+    for (int16_t i = 0; i < w; i++) {
+        for (int16_t j = 0; j < h; j++) {
+            vga_pixel_fast(x + i, y + j, color);
+        }
+    }
+}
+
+/***************************************************************************************
 ** Function name:           vga_drawChar
 ** Description:            Disegna un carattere usando i font in Flash (AVR)
 ***************************************************************************************/
@@ -168,7 +278,7 @@ int vga_drawChar(unsigned int uniCode, int x, int y, int font) {
     // Gestione Font 1 (GLCD) - Se l'hai implementata
     if (font == 1) {
         #ifdef LOAD_GLCD
-            // tft_drawCharGL(x, y, uniCode, textcolor, textbgcolor, textsize);
+            vga_drawCharGL(x, y, uniCode, textcolor, textbgcolor, textsize);
             return 6 * textsize;
         #else
             return 0;
@@ -266,7 +376,7 @@ void vga_printAt(const char *str, int16_t x, int16_t y, uint16_t color, uint16_t
     // Impostiamo le variabili globali utilizzate da vga_drawChar
     textcolor = color;
     textbgcolor = bg;
-    textsize = 1; // Forza dimensione standard per la UI del DSO
+    //textsize = 1; // Forza dimensione standard per la UI del DSO
 
     // Se la stringa è in RAM
     while (*str) {

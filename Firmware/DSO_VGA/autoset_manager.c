@@ -138,8 +138,8 @@ void routine_autoset_dual() {
         ch2.enabled = true;
 
         // Calcoliamo scale e offset (85 per CH1, 205 per CH2)
-        configura_verticale_smart(&ch1, 85); 
-        configura_verticale_smart(&ch2, 205); 
+        configura_verticale_smart(&ch1, POSIZIONE_TOP); 
+        configura_verticale_smart(&ch2, POSIZIONE_BOTTOM); 
 
         // IMPORTANTE: Devi aggiornare anche gli encoder degli offset (assumendo siano id 0 e 2)
         write_encoder(0, ch1.offset); 
@@ -148,13 +148,13 @@ void routine_autoset_dual() {
     else if (signal_A) {
         ch1.enabled = true;
         ch2.enabled = false;
-        configura_verticale_smart(&ch1, 100); // Centro
+        configura_verticale_smart(&ch1, POSIZIONE_CENTER); // Centro
         write_encoder(0, ch1.offset);
     }
     else if (signal_B) {
         ch1.enabled = false;
         ch2.enabled = true;
-        configura_verticale_smart(&ch2, 100); // Centro
+        configura_verticale_smart(&ch2, POSIZIONE_CENTER); // Centro
         write_encoder(2, ch2.offset);
     }
 
@@ -283,27 +283,24 @@ void configura_verticale_smart(Channel *ch, int target_offset) {
 }
 
 void draw_autoset_message() {
-    // Coordinate del box (ipotizzando uno schermo 320x240)
-    // Regola questi valori in base alla tua risoluzione reale
     int16_t box_w = 140;
     int16_t box_h = 40;
-    int16_t box_x = (400 - box_w) / 2; 
-    int16_t box_y = (240 - box_h) / 2;
+    int16_t box_x = (500 - box_w) / 2; 
+    int16_t box_y = (380 - box_h) / 2;
 
     // 1. Disegna il background del box (nero per coprire le tracce vecchie)
     vga_fillRect(box_x + MARGIN_X, box_y + MARGIN_Y, box_w, box_h, BLACK);
 
-    // 2. Disegna la cornice (magari gialla o verde per dare l'idea di sistema attivo)
+    // 2. Disegna la cornice 
     vga_drawRect(box_x + MARGIN_X, box_y + MARGIN_Y, box_w, box_h, YELLOW);
     vga_drawRect(box_x + 2 + MARGIN_X, box_y + 2 + MARGIN_Y, box_w - 4, box_h - 4, YELLOW); // Doppia cornice pro
 
     // 3. Scritta "AUTOSET" centrata
-    vga_setTextSize(2); // Dimensione leggibile
+    vga_setTextSize(1); // Dimensione leggibile
     //tft_printAt("AUTOSET", box_x + 25 + MARGIN_X, box_y + 12 + MARGIN_Y, WHITE, DARKGREY, 2);
     vga_printCenteredX("AUTOSET", box_x + 2 + MARGIN_X, box_x + 2 + MARGIN_X + box_w - 4, box_y + 12 + MARGIN_Y, YELLOW, BLACK, 2);
     
-    // Se la tua libreria lo richiede, forza l'invio al display
-    // tft.display(); 
+    //vga_setTextSize(1);
 }
 
 bool check_presence(Channel *ch) {

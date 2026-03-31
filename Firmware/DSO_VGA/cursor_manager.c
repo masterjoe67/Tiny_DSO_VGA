@@ -100,7 +100,7 @@ void calcola_e_stampa_dati_cursori() {
 
     if (cursor_type == CUR_VOLT) {
         if (cursor_v_a != last_v_a || cursor_v_b != last_v_b || changed) {
-            float v_per_px = (ch->volts_div / 30.0f) * (ch->inverted ? -1.0f : 1.0f);
+            float v_per_px = (ch->volts_div / 38.0f) * (ch->inverted ? -1.0f : 1.0f);
             float va = (float)(ch->offset - cursor_v_a) * v_per_px;
             float vb = (float)(ch->offset - cursor_v_b) * v_per_px;
 
@@ -116,7 +116,7 @@ void calcola_e_stampa_dati_cursori() {
     } 
     else if (cursor_type == CUR_TIME) {
         if (cursor_h_a != last_h_a || cursor_h_b != last_h_b || changed) {
-            float t_per_px = current_tdiv / 40.0f;
+            float t_per_px = current_tdiv / 50.0f;
             float ta = (float)(cursor_h_a - CENTER_TRACE_X) * t_per_px;
             float tb = (float)(cursor_h_b - CENTER_TRACE_X) * t_per_px;
             float dt = ta - tb;
@@ -209,8 +209,8 @@ void aggiorna_grafica_cursori() {
 ** dell'area di traccia per evitare artefatti nel menu.
 ***************************************************************************************/
 void disegna_linea_cursore_v(int16_t y, uint16_t colore) {
-    // Disegna una linea orizzontale tratteggiata (asse X: 0-400)
-    for (int16_t x = 0; x < 400; x += 8) {
+    // Disegna una linea orizzontale tratteggiata (asse X: 0-500)
+    for (int16_t x = 0; x < TRACE_W; x += 8) {
         vga_drawFastHLine(MARGIN_X + x, y, 4, colore); // Disegna 4 pixel, ne salta 4
     }
 }
@@ -223,7 +223,7 @@ void disegna_linea_cursore_v(int16_t y, uint16_t colore) {
 ***************************************************************************************/
 void disegna_linea_cursore_h(int16_t x, uint16_t colore) {
     // Disegna una linea verticale tratteggiata (asse Y: 0-240)
-    for (int16_t y = 0; y < 240; y += 8) {
+    for (int16_t y = 0; y < TRACE_H; y += 8) {
         vga_drawFastVLine(x, MARGIN_Y + y, 4, colore);
     }
 }

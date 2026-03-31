@@ -87,7 +87,7 @@ architecture rtl of oscilloscope_top is
     constant POST_TRIGGER_LEN : integer := 1024;
     constant AUTO_TIMEOUT     : unsigned(15 downto 0) := to_unsigned(2050, 16);
 	 constant PAN_LIMIT 			: integer := BUFFER_SIZE/2;
-	 constant VIEW_BEGIN      : integer := 200;
+	 constant VIEW_BEGIN      : integer := 250;
 
     ------------------------------------------------------------------
     -- Segnali Interni
@@ -683,7 +683,7 @@ begin
              -- Incremento alla FINE della lettura (Fronte di salita di ramre)
              -- Solo se siamo sull'ultimo byte del pacchetto (CH2_High -> "11")
              if bram_ce = '1' and mem_ramadr(3 downto 0) = "0011" then
-                  if reg_index_int = 499 then 
+                  if reg_index_int = 599 then 
                       reg_index_int <= (others => '0');
                   else
                       reg_index_int <= reg_index_int + 1;
